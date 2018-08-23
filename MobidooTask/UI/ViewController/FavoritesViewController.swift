@@ -1,0 +1,64 @@
+//
+//  FavoritesViewController.swift
+//  MobidooTask
+//
+//  Created by  Kostantin Zarubin on 20.08.2018.
+//  Copyright © 2018  Kostantin Zarubin. All rights reserved.
+//
+
+import UIKit
+
+class FavoritesViewController: UIViewController {
+    @IBOutlet weak var favoriteTableView: UITableView!
+    @IBOutlet weak var explainLabel: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        favoriteTableView.rowHeight = UITableViewAutomaticDimension
+        favoriteTableView.estimatedRowHeight = 80
+        favoriteTableView.tableFooterView = UIView()
+        NotificationCenter.default.addObserver(forName: Notification.Name("favorite"), object: nil, queue: nil) { [weak self] (notification) in
+            self?.favoriteTableView.reloadData()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tabBarController?.title = "Избранное"
+        favoriteTableView.isHidden = favoriteBooks.isEmpty
+        explainLabel.isHidden = !favoriteBooks.isEmpty
+    }
+
+}
+
+extension FavoritesViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return favoriteBooks.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteTableViewCell", for: indexPath) as! FavoriteTableViewCell
+        let favoriteList = favoriteBooks[indexPath.row]
+        cell.favoriteLabel.text = favoriteList.title
+        cell.favoriteImageView.kf.setImage(with: URL(string: favoriteList.cover), completionHandler: { (image, error, cacheType, imageUrl) in
+        })
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "ShowContent", sender: indexPath)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowContent"{
+            if let nextViewController = segue.destination as? ContentViewController{
+                let content = favoriteBooks[(sender as! IndexPath).row]
+                nextViewController.bookId = content.id
+                nextViewController.cover = content.cover
+                nextViewController.author = content.author
+                nextViewController.bookTitle = content.title
+            }
+        }
+    }
+}
+

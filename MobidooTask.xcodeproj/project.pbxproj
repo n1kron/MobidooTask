@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9989F2D2212B29F7000C8754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989F2D1212B29F7000C8754 /* AppDelegate.swift */; };
+		9989F2D7212B29F7000C8754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9989F2D5212B29F7000C8754 /* Main.storyboard */; };
+		9989F2D9212B29FA000C8754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9989F2D8212B29FA000C8754 /* Assets.xcassets */; };
+		9989F2DC212B29FA000C8754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9989F2DA212B29FA000C8754 /* LaunchScreen.storyboard */; };
+		9989F2E7212B29FA000C8754 /* MobidooTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989F2E6212B29FA000C8754 /* MobidooTaskTests.swift */; };
+		9989F2F2212B29FA000C8754 /* MobidooTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989F2F1212B29FA000C8754 /* MobidooTaskUITests.swift */; };
+		9989F305212B2C8A000C8754 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989F304212B2C8A000C8754 /* Book.swift */; };
+		9989F307212B2E1C000C8754 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989F306212B2E1C000C8754 /* MainViewController.swift */; };
+		9989F309212B2E4B000C8754 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989F308212B2E4B000C8754 /* FavoritesViewController.swift */; };
+		9989F30B212B2EAD000C8754 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989F30A212B2EAD000C8754 /* BookTableViewCell.swift */; };
+		9989F30E212B2FE5000C8754 /* FetchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989F30D212B2FE5000C8754 /* FetchData.swift */; };
+		9989F310212B3076000C8754 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9989F30F212B3076000C8754 /* Alamofire.framework */; };
+		9989F312212B307B000C8754 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9989F311212B307B000C8754 /* Kingfisher.framework */; };
+		9989F314212B43D6000C8754 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989F313212B43D6000C8754 /* SettingsTableViewController.swift */; };
+		9989F316212B45BD000C8754 /* Utiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989F315212B45BD000C8754 /* Utiles.swift */; };
+		9989F318212C37C4000C8754 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989F317212C37C4000C8754 /* ContentViewController.swift */; };
+		9989F31C212C7760000C8754 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989F31B212C7760000C8754 /* Storage.swift */; };
+		C0EDBBE1CD9B316C47204E6C /* Pods_MobidooTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B563140F12464717BB8E0437 /* Pods_MobidooTask.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9989F2E3212B29FA000C8754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9989F2C6212B29F7000C8754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9989F2CD212B29F7000C8754;
+			remoteInfo = MobidooTask;
+		};
+		9989F2EE212B29FA000C8754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9989F2C6212B29F7000C8754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9989F2CD212B29F7000C8754;
+			remoteInfo = MobidooTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		831692D8EBC845DA86646FC9 /* Pods-MobidooTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobidooTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobidooTask/Pods-MobidooTask.debug.xcconfig"; sourceTree = "<group>"; };
+		9989F2CE212B29F7000C8754 /* MobidooTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobidooTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9989F2D1212B29F7000C8754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9989F2D6212B29F7000C8754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9989F2D8212B29FA000C8754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9989F2DB212B29FA000C8754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9989F2DD212B29FA000C8754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9989F2E2212B29FA000C8754 /* MobidooTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobidooTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9989F2E6212B29FA000C8754 /* MobidooTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobidooTaskTests.swift; sourceTree = "<group>"; };
+		9989F2E8212B29FA000C8754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9989F2ED212B29FA000C8754 /* MobidooTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobidooTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9989F2F1212B29FA000C8754 /* MobidooTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobidooTaskUITests.swift; sourceTree = "<group>"; };
+		9989F2F3212B29FA000C8754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9989F304212B2C8A000C8754 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		9989F306212B2E1C000C8754 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9989F308212B2E4B000C8754 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		9989F30A212B2EAD000C8754 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
+		9989F30D212B2FE5000C8754 /* FetchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchData.swift; sourceTree = "<group>"; };
+		9989F30F212B3076000C8754 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9989F311212B307B000C8754 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9989F313212B43D6000C8754 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		9989F315212B45BD000C8754 /* Utiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utiles.swift; sourceTree = "<group>"; };
+		9989F317212C37C4000C8754 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		9989F31B212C7760000C8754 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		A2FFFA7900746223A19FE7B6 /* Pods-MobidooTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobidooTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobidooTask/Pods-MobidooTask.release.xcconfig"; sourceTree = "<group>"; };
+		B563140F12464717BB8E0437 /* Pods_MobidooTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobidooTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9989F2CB212B29F7000C8754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9989F312212B307B000C8754 /* Kingfisher.framework in Frameworks */,
+				9989F310212B3076000C8754 /* Alamofire.framework in Frameworks */,
+				C0EDBBE1CD9B316C47204E6C /* Pods_MobidooTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9989F2DF212B29FA000C8754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9989F2EA212B29FA000C8754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44E29575433C86BDE999E506 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9989F311212B307B000C8754 /* Kingfisher.framework */,
+				9989F30F212B3076000C8754 /* Alamofire.framework */,
+				B563140F12464717BB8E0437 /* Pods_MobidooTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9989F2C5212B29F7000C8754 = {
+			isa = PBXGroup;
+			children = (
+				9989F2D0212B29F7000C8754 /* MobidooTask */,
+				9989F2E5212B29FA000C8754 /* MobidooTaskTests */,
+				9989F2F0212B29FA000C8754 /* MobidooTaskUITests */,
+				9989F2CF212B29F7000C8754 /* Products */,
+				C215041A5744F1A7CD82E4AC /* Pods */,
+				44E29575433C86BDE999E506 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9989F2CF212B29F7000C8754 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9989F2CE212B29F7000C8754 /* MobidooTask.app */,
+				9989F2E2212B29FA000C8754 /* MobidooTaskTests.xctest */,
+				9989F2ED212B29FA000C8754 /* MobidooTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9989F2D0212B29F7000C8754 /* MobidooTask */ = {
+			isa = PBXGroup;
+			children = (
+				9989F2D1212B29F7000C8754 /* AppDelegate.swift */,
+				9989F2DD212B29FA000C8754 /* Info.plist */,
+				9989F30C212B2FC9000C8754 /* Services */,
+				9989F300212B2A7A000C8754 /* Model */,
+				9989F2FF212B2A71000C8754 /* UI */,
+				9989F301212B2A83000C8754 /* Resources */,
+			);
+			path = MobidooTask;
+			sourceTree = "<group>";
+		};
+		9989F2E5212B29FA000C8754 /* MobidooTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				9989F2E6212B29FA000C8754 /* MobidooTaskTests.swift */,
+				9989F2E8212B29FA000C8754 /* Info.plist */,
+			);
+			path = MobidooTaskTests;
+			sourceTree = "<group>";
+		};
+		9989F2F0212B29FA000C8754 /* MobidooTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9989F2F1212B29FA000C8754 /* MobidooTaskUITests.swift */,
+				9989F2F3212B29FA000C8754 /* Info.plist */,
+			);
+			path = MobidooTaskUITests;
+			sourceTree = "<group>";
+		};
+		9989F2FF212B2A71000C8754 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9989F303212B2ACA000C8754 /* View */,
+				9989F302212B2AB9000C8754 /* ViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9989F300212B2A7A000C8754 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9989F304212B2C8A000C8754 /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9989F301212B2A83000C8754 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9989F2D5212B29F7000C8754 /* Main.storyboard */,
+				9989F2DA212B29FA000C8754 /* LaunchScreen.storyboard */,
+				9989F2D8212B29FA000C8754 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9989F302212B2AB9000C8754 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9989F306212B2E1C000C8754 /* MainViewController.swift */,
+				9989F308212B2E4B000C8754 /* FavoritesViewController.swift */,
+				9989F317212C37C4000C8754 /* ContentViewController.swift */,
+				9989F313212B43D6000C8754 /* SettingsTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9989F303212B2ACA000C8754 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9989F30A212B2EAD000C8754 /* BookTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9989F30C212B2FC9000C8754 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9989F30D212B2FE5000C8754 /* FetchData.swift */,
+				9989F315212B45BD000C8754 /* Utiles.swift */,
+				9989F31B212C7760000C8754 /* Storage.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C215041A5744F1A7CD82E4AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				831692D8EBC845DA86646FC9 /* Pods-MobidooTask.debug.xcconfig */,
+				A2FFFA7900746223A19FE7B6 /* Pods-MobidooTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9989F2CD212B29F7000C8754 /* MobidooTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9989F2F6212B29FA000C8754 /* Build configuration list for PBXNativeTarget "MobidooTask" */;
+			buildPhases = (
+				87F525633587E033F1FA25A7 /* [CP] Check Pods Manifest.lock */,
+				9989F2CA212B29F7000C8754 /* Sources */,
+				9989F2CB212B29F7000C8754 /* Frameworks */,
+				9989F2CC212B29F7000C8754 /* Resources */,
+				0394F57B80C26F3D41265743 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobidooTask;
+			productName = MobidooTask;
+			productReference = 9989F2CE212B29F7000C8754 /* MobidooTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9989F2E1212B29FA000C8754 /* MobidooTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9989F2F9212B29FA000C8754 /* Build configuration list for PBXNativeTarget "MobidooTaskTests" */;
+			buildPhases = (
+				9989F2DE212B29FA000C8754 /* Sources */,
+				9989F2DF212B29FA000C8754 /* Frameworks */,
+				9989F2E0212B29FA000C8754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9989F2E4212B29FA000C8754 /* PBXTargetDependency */,
+			);
+			name = MobidooTaskTests;
+			productName = MobidooTaskTests;
+			productReference = 9989F2E2212B29FA000C8754 /* MobidooTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9989F2EC212B29FA000C8754 /* MobidooTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9989F2FC212B29FA000C8754 /* Build configuration list for PBXNativeTarget "MobidooTaskUITests" */;
+			buildPhases = (
+				9989F2E9212B29FA000C8754 /* Sources */,
+				9989F2EA212B29FA000C8754 /* Frameworks */,
+				9989F2EB212B29FA000C8754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9989F2EF212B29FA000C8754 /* PBXTargetDependency */,
+			);
+			name = MobidooTaskUITests;
+			productName = MobidooTaskUITests;
+			productReference = 9989F2ED212B29FA000C8754 /* MobidooTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9989F2C6212B29F7000C8754 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = " Kostantin Zarubin";
+				TargetAttributes = {
+					9989F2CD212B29F7000C8754 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					9989F2E1212B29FA000C8754 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 9989F2CD212B29F7000C8754;
+					};
+					9989F2EC212B29FA000C8754 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 9989F2CD212B29F7000C8754;
+					};
+				};
+			};
+			buildConfigurationList = 9989F2C9212B29F7000C8754 /* Build configuration list for PBXProject "MobidooTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9989F2C5212B29F7000C8754;
+			productRefGroup = 9989F2CF212B29F7000C8754 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9989F2CD212B29F7000C8754 /* MobidooTask */,
+				9989F2E1212B29FA000C8754 /* MobidooTaskTests */,
+				9989F2EC212B29FA000C8754 /* MobidooTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9989F2CC212B29F7000C8754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9989F2DC212B29FA000C8754 /* LaunchScreen.storyboard in Resources */,
+				9989F2D9212B29FA000C8754 /* Assets.xcassets in Resources */,
+				9989F2D7212B29F7000C8754 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9989F2E0212B29FA000C8754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9989F2EB212B29FA000C8754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0394F57B80C26F3D41265743 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MobidooTask/Pods-MobidooTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobidooTask/Pods-MobidooTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87F525633587E033F1FA25A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobidooTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9989F2CA212B29F7000C8754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9989F30E212B2FE5000C8754 /* FetchData.swift in Sources */,
+				9989F31C212C7760000C8754 /* Storage.swift in Sources */,
+				9989F2D2212B29F7000C8754 /* AppDelegate.swift in Sources */,
+				9989F305212B2C8A000C8754 /* Book.swift in Sources */,
+				9989F309212B2E4B000C8754 /* FavoritesViewController.swift in Sources */,
+				9989F318212C37C4000C8754 /* ContentViewController.swift in Sources */,
+				9989F30B212B2EAD000C8754 /* BookTableViewCell.swift in Sources */,
+				9989F307212B2E1C000C8754 /* MainViewController.swift in Sources */,
+				9989F314212B43D6000C8754 /* SettingsTableViewController.swift in Sources */,
+				9989F316212B45BD000C8754 /* Utiles.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9989F2DE212B29FA000C8754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9989F2E7212B29FA000C8754 /* MobidooTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9989F2E9212B29FA000C8754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9989F2F2212B29FA000C8754 /* MobidooTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9989F2E4212B29FA000C8754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9989F2CD212B29F7000C8754 /* MobidooTask */;
+			targetProxy = 9989F2E3212B29FA000C8754 /* PBXContainerItemProxy */;
+		};
+		9989F2EF212B29FA000C8754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9989F2CD212B29F7000C8754 /* MobidooTask */;
+			targetProxy = 9989F2EE212B29FA000C8754 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9989F2D5212B29F7000C8754 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9989F2D6212B29F7000C8754 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9989F2DA212B29FA000C8754 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9989F2DB212B29FA000C8754 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9989F2F4212B29FA000C8754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9989F2F5212B29FA000C8754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9989F2F7212B29FA000C8754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 831692D8EBC845DA86646FC9 /* Pods-MobidooTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobidooTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.MobidooTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9989F2F8212B29FA000C8754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2FFFA7900746223A19FE7B6 /* Pods-MobidooTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobidooTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.MobidooTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9989F2FA212B29FA000C8754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobidooTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.MobidooTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobidooTask.app/MobidooTask";
+			};
+			name = Debug;
+		};
+		9989F2FB212B29FA000C8754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobidooTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.MobidooTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobidooTask.app/MobidooTask";
+			};
+			name = Release;
+		};
+		9989F2FD212B29FA000C8754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobidooTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.MobidooTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobidooTask;
+			};
+			name = Debug;
+		};
+		9989F2FE212B29FA000C8754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobidooTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.MobidooTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobidooTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9989F2C9212B29F7000C8754 /* Build configuration list for PBXProject "MobidooTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9989F2F4212B29FA000C8754 /* Debug */,
+				9989F2F5212B29FA000C8754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9989F2F6212B29FA000C8754 /* Build configuration list for PBXNativeTarget "MobidooTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9989F2F7212B29FA000C8754 /* Debug */,
+				9989F2F8212B29FA000C8754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9989F2F9212B29FA000C8754 /* Build configuration list for PBXNativeTarget "MobidooTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9989F2FA212B29FA000C8754 /* Debug */,
+				9989F2FB212B29FA000C8754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9989F2FC212B29FA000C8754 /* Build configuration list for PBXNativeTarget "MobidooTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9989F2FD212B29FA000C8754 /* Debug */,
+				9989F2FE212B29FA000C8754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9989F2C6212B29F7000C8754 /* Project object */;
+}
