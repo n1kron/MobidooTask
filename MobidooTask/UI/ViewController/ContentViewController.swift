@@ -18,7 +18,7 @@ class ContentViewController: UIViewController {
     var author: String = ""
     var cover: String = ""
     var bookTitle: String = ""
-    var result = [String]()
+    var splittedStrings = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class ContentViewController: UIViewController {
         navigationItem.rightBarButtonItem = shareButton
         
         NotificationCenter.default.addObserver(forName: Notification.Name("content"), object: nil, queue: nil) { [weak self] (notification) in
-            self?.result = ContentData.shared.contentText.splitByLength(TextScaleCalculator.use(), seperator: " ")
+            self?.splittedStrings = ContentData.shared.contentText.splitByLength(Int(UIScreen.main.bounds.size.height * 1.6), separator: " ")
             self?.contentTableView.reloadData()
             self?.contentTableView.isHidden = false
             self?.activityIndicator.stopAnimating()
@@ -52,7 +52,7 @@ class ContentViewController: UIViewController {
 extension ContentViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return result.count + 1
+        return splittedStrings.count + 1
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -69,8 +69,8 @@ extension ContentViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ContentTableViewCell", for: indexPath) as! ContentTableViewCell
-            if result != [] {
-                cell.contentTextView.text = result[indexPath.row - 1]
+            if splittedStrings != [] {
+                cell.contentLabel.text = splittedStrings[indexPath.row - 1]
             }
             return cell
         }

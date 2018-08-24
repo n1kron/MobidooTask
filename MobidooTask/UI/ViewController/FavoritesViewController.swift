@@ -17,15 +17,13 @@ class FavoritesViewController: UIViewController {
         favoriteTableView.rowHeight = UITableViewAutomaticDimension
         favoriteTableView.estimatedRowHeight = 80
         favoriteTableView.tableFooterView = UIView()
-        NotificationCenter.default.addObserver(forName: Notification.Name("favorite"), object: nil, queue: nil) { [weak self] (notification) in
-            self?.favoriteTableView.reloadData()
-        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         tabBarController?.title = "Избранное"
         favoriteTableView.isHidden = favoriteBooks.isEmpty
         explainLabel.isHidden = !favoriteBooks.isEmpty
+        favoriteTableView.reloadData()
     }
 
 }
@@ -47,6 +45,13 @@ extension FavoritesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "ShowContent", sender: indexPath)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            favoriteBooks.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

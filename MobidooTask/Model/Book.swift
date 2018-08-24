@@ -9,7 +9,6 @@
 import Foundation
 
 var favoriteBooks: [Book] = []
-var favoriteSelectedArray: [Bool] = []
 
 class Book: NSObject, NSCoding {
     let id: Int
@@ -31,11 +30,14 @@ class Book: NSObject, NSCoding {
         self.id = decoder.decodeInteger(forKey: "id")
     }
     
-    
     func encode(with aCoder: NSCoder) {
         aCoder.encode(title, forKey: "title")
         aCoder.encode(author, forKey: "author")
         aCoder.encode(cover, forKey: "cover")
         aCoder.encode(id, forKey: "id")
+    }
+    
+    override func isEqual(_ object: Any?) -> Bool {
+        return id == (object as? Book)?.id
     }
 }

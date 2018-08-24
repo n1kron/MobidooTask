@@ -9,7 +9,7 @@
 import UIKit
 import Kingfisher
 
-class MainViewController: UIViewController {
+class BooksListViewController: UIViewController {
 
     @IBOutlet weak var booksTableView: UITableView!
     
@@ -23,33 +23,28 @@ class MainViewController: UIViewController {
         NotificationCenter.default.addObserver(forName: Notification.Name("books"), object: nil, queue: nil) { [weak self] (notification) in
             self?.booksTableView.isHidden = false
             self?.booksTableView.reloadData()
-            
-            if favoriteSelectedArray.isEmpty {
-                for _ in 0...BooksData.shared.bookList.count {
-                    favoriteSelectedArray.append(false)
-                }
-            }
         }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         tabBarController?.title = "Главная"
+        booksTableView.reloadData()
     }
 }
 
-extension MainViewController: UITableViewDelegate, UITableViewDataSource {
+extension BooksListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return BooksData.shared.bookList.count
+        return BooksData.shared.booksList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BookTableViewCell", for: indexPath) as! BookTableViewCell
-        let bookList = BooksData.shared.bookList[indexPath.row]
+        let book = BooksData.shared.booksList[indexPath.row]
         cell.delegate = self
-        cell.titleLabel.text = bookList.title
-        cell.starButton.isSelected = favoriteSelectedArray[indexPath.row]
-        cell.bookImageView.kf.setImage(with: URL(string: bookList.cover), completionHandler: { (image, error, cacheType, imageUrl) in
+        cell.titleLabel.text = book.title
+        cell.starButton.isSelected = favoriteBooks.contains(book)
+        cell.bookImageView.kf.setImage(with: URL(string: book.cover), completionHandler: { (image, error, cacheType, imageUrl) in
         })
         return cell
     }
@@ -62,7 +57,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowContent" {
             if let nextViewController = segue.destination as? ContentViewController {
-                let content = BooksData.shared.bookList[(sender as! IndexPath).row]
+                let content = BooksData.shared.booksList[(sender as! IndexPath).row]
                 nextViewController.bookId = content.id
                 nextViewController.cover = content.cover
                 nextViewController.author = content.author
@@ -72,21 +67,19 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension MainViewController: UIFavoriteViewDelegate {
+extension BooksListViewController: UIFavoriteViewDelegate {
     func favoritePressed(cell: UITableViewCell) {
         if let indexPathTapped = booksTableView.indexPath(for: cell) {
-            let book = BooksData.shared.bookList[indexPathTapped.row]
+            let book = BooksData.shared.booksList[indexPathTapped.row]
             
-            if favoriteBooks.contains(where: {$0.id == book.id}) {
-                favoriteBooks = favoriteBooks.filter {$0.id != book.id}
-                favoriteSelectedArray[indexPathTapped.row] = false
+            if favoriteBooks.contains(book) {
+                if let index = favoriteBooks.index(of: book) {
+                    favoriteBooks.remove(at: index)
+                }
             } else {
                 favoriteBooks.append(book)
-                favoriteSelectedArray[indexPathTapped.row] = true
             }
-            
             storage.save()
-            NotificationCenter.default.post(name: Notification.Name("favorite"), object: nil)
         }
     }
 }

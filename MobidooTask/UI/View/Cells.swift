@@ -13,7 +13,6 @@ protocol UIFavoriteViewDelegate: class {
 }
 
 class BookTableViewCell: UITableViewCell {
-
     @IBOutlet weak var bookImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     let starButton = UIButton(type: .system)
@@ -47,5 +46,5 @@ class FirstPageTableViewCell: UITableViewCell {
 }
 
 class ContentTableViewCell: UITableViewCell {
-    @IBOutlet weak var contentTextView: UITextView!
+    @IBOutlet weak var contentLabel: UILabel!
 }

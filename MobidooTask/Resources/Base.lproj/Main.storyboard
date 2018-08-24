@@ -168,22 +168,22 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="663.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmp-vP-187">
-                                                    <rect key="frame" x="15" y="11" width="345" height="642"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="U7A-FW-TgC">
+                                                    <rect key="frame" x="15" y="10" width="345" height="643.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Kmp-vP-187" firstAttribute="trailing" secondItem="qUD-Ny-FVq" secondAttribute="trailingMargin" id="4JV-7e-eFb"/>
-                                                <constraint firstItem="Kmp-vP-187" firstAttribute="leading" secondItem="qUD-Ny-FVq" secondAttribute="leadingMargin" id="Pc8-7K-skI"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Kmp-vP-187" secondAttribute="bottom" id="baV-3e-jYL"/>
-                                                <constraint firstItem="Kmp-vP-187" firstAttribute="top" secondItem="qUD-Ny-FVq" secondAttribute="topMargin" id="xoW-nP-UXq"/>
+                                                <constraint firstAttribute="bottom" secondItem="U7A-FW-TgC" secondAttribute="bottom" constant="10" id="41b-eD-hiJ"/>
+                                                <constraint firstAttribute="trailing" secondItem="U7A-FW-TgC" secondAttribute="trailing" constant="15" id="DTS-jC-ZJd"/>
+                                                <constraint firstItem="U7A-FW-TgC" firstAttribute="leading" secondItem="qUD-Ny-FVq" secondAttribute="leading" constant="15" id="Xar-Ai-X9t"/>
+                                                <constraint firstItem="U7A-FW-TgC" firstAttribute="top" secondItem="qUD-Ny-FVq" secondAttribute="top" constant="10" id="kX8-Jh-mOt"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="contentTextView" destination="Kmp-vP-187" id="KYq-PO-inb"/>
+                                            <outlet property="contentLabel" destination="U7A-FW-TgC" id="b5o-Kf-Po9"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -214,7 +214,7 @@
         <!--Главное-->
         <scene sceneID="1oP-hW-Pn0">
             <objects>
-                <viewController id="aTF-wg-oG4" customClass="MainViewController" customModule="MobidooTask" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aTF-wg-oG4" customClass="BooksListViewController" customModule="MobidooTask" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wlW-4s-ff4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -447,6 +447,6 @@
         <image name="settings" width="26" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KIB-8T-ggW"/>
+        <segue reference="eD6-12-CEM"/>
     </inferredMetricsTieBreakers>
 </document>
