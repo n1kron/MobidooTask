@@ -36,6 +36,7 @@ class BooksListViewController: UIViewController {
             if let nextViewController = segue.destination as? ContentViewController {
                 if let id = sender as? Int {
                     if let content = BooksData.shared.booksList.first(where: {$0.id == id}) {
+                        print(id)
                         nextViewController.bookId = id
                         nextViewController.cover = content.cover
                         nextViewController.author = content.author
@@ -57,12 +58,12 @@ extension BooksListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 3 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SuggestTableViewCell", for: indexPath) as! SuggestTableViewCell
-            cell.suggestCollectionView.delegate = self
-            cell.suggestCollectionView.dataSource = self
+            cell.delegate = self
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "BookTableViewCell", for: indexPath) as! BookTableViewCell
-            let book = BooksData.shared.booksList[indexPath.row]
+            let index = indexPath.row > 3 ? indexPath.row - 1 : indexPath.row
+            let book = BooksData.shared.booksList[index]
             cell.delegate = self
             cell.titleLabel.text = book.title
             cell.starButton.isSelected = favoriteBooks.contains(book)
@@ -72,11 +73,13 @@ extension BooksListViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let book = BooksData.shared.booksList[indexPath.row]
-        performSegue(withIdentifier: "ShowContent", sender: book.id)
+        if indexPath.row != 3 {
+            let index = indexPath.row > 3 ? indexPath.row - 1 : indexPath.row
+            let book = BooksData.shared.booksList[index]
+            performSegue(withIdentifier: "ShowContent", sender: book.id)
+        }
     }
 }
 
@@ -124,4 +127,8 @@ extension BooksListViewController: UICollectionViewDelegate, UICollectionViewDat
     }
 }
 
-
+extension BooksListViewController: UISuggestViewDelegate {
+    func suggestPressed(id: Int) {
+        performSegue(withIdentifier: "ShowContent", sender: id)
+    }
+}

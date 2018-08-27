@@ -52,6 +52,7 @@
 		831692D8EBC845DA86646FC9 /* Pods-MobidooTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobidooTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobidooTask/Pods-MobidooTask.debug.xcconfig"; sourceTree = "<group>"; };
 		995346A82132F12700EC8B46 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		995346AA213336F500EC8B46 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		995346AE21342BE700EC8B46 /* SwiftyOnboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyOnboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9989F2CE212B29F7000C8754 /* MobidooTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobidooTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9989F2D1212B29F7000C8754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9989F2D6212B29F7000C8754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +113,7 @@
 		44E29575433C86BDE999E506 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				995346AE21342BE700EC8B46 /* SwiftyOnboard.framework */,
 				9989F311212B307B000C8754 /* Kingfisher.framework */,
 				9989F30F212B3076000C8754 /* Alamofire.framework */,
 				B563140F12464717BB8E0437 /* Pods_MobidooTask.framework */,

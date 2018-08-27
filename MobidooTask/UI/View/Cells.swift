@@ -12,6 +12,10 @@ protocol UIFavoriteViewDelegate: class {
     func favoritePressed(cell: UITableViewCell)
 }
 
+protocol UISuggestViewDelegate: class {
+    func suggestPressed(id: Int)
+}
+
 class BookTableViewCell: UITableViewCell {
     @IBOutlet weak var bookImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -34,8 +38,9 @@ class BookTableViewCell: UITableViewCell {
     }
 }
 
-class SuggestTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class SuggestTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet weak var suggestCollectionView: UICollectionView!
+    weak var delegate: UISuggestViewDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -49,14 +54,16 @@ class SuggestTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollect
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SuggestCollectionViewCell", for: indexPath) as! SuggestCollectionViewCell
-        let bookID = Consts.suggestBooks.all[indexPath.row]
-//        cell.suggestImageView.kf.setImage(with: URL(string: book.cover), completionHandler: { (image, error, cacheType, imageUrl) in
-//        })
+        let bookId = Consts.suggestBooks.all[indexPath.row]
+        if let book = BooksData.shared.booksList.first(where: {$0.id == bookId}) {
+            cell.suggestImageView.kf.setImage(with: URL(string: book.cover), completionHandler: { (image, error, cacheType, imageUrl) in
+            })
+        }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        delegate?.suggestPressed(id: Consts.suggestBooks.all[indexPath.row])
     }
 }
 
