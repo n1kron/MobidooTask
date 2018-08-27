@@ -11,7 +11,7 @@ import Kingfisher
 
 class ContentViewController: UIViewController {
     
-    @IBOutlet weak var contentTableView: UITableView!
+    @IBOutlet weak var contentCollectionView: UICollectionView!
     
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     var bookId: Int = 0
@@ -28,14 +28,14 @@ class ContentViewController: UIViewController {
         
         NotificationCenter.default.addObserver(forName: Notification.Name("content"), object: nil, queue: nil) { [weak self] (notification) in
             self?.splittedStrings = ContentData.shared.contentText.splitByLength(Int(UIScreen.main.bounds.size.height * 1.6), separator: " ")
-            self?.contentTableView.reloadData()
-            self?.contentTableView.isHidden = false
+            self?.contentCollectionView.reloadData()
+            self?.contentCollectionView.isHidden = false
             self?.activityIndicator.stopAnimating()
         }
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        contentTableView.isHidden = true
+        contentCollectionView.isHidden = true
         activityIndicator.center = view.center
         activityIndicator.hidesWhenStopped = true
         activityIndicator.activityIndicatorViewStyle = .gray
@@ -49,26 +49,29 @@ class ContentViewController: UIViewController {
     }
 }
 
-extension ContentViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension ContentViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return splittedStrings.count + 1
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return tableView.frame.size.height
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.bounds.size.width , height: collectionView.bounds.size.height )
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "FirstPageTableViewCell", for: indexPath) as! FirstPageTableViewCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FirstPageTableViewCell", for: indexPath) as! FirstPageCollectionViewCell
             cell.authorLabel.text = author
             cell.titleLabel.text = bookTitle
             cell.coverImageView.kf.setImage(with: URL(string: cover), completionHandler: { (image, error, cacheType, imageUrl) in
             })
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ContentTableViewCell", for: indexPath) as! ContentTableViewCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentTableViewCell", for: indexPath) as! ContentCollectionViewCell
             if splittedStrings != [] {
                 cell.contentLabel.text = splittedStrings[indexPath.row - 1]
             }

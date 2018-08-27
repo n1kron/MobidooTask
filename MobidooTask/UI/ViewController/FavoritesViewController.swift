@@ -25,7 +25,6 @@ class FavoritesViewController: UIViewController {
         explainLabel.isHidden = !favoriteBooks.isEmpty
         favoriteTableView.reloadData()
     }
-
 }
 
 extension FavoritesViewController: UITableViewDelegate, UITableViewDataSource {
@@ -51,6 +50,7 @@ extension FavoritesViewController: UITableViewDelegate, UITableViewDataSource {
         if editingStyle == .delete {
             favoriteBooks.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
+            explainLabel.isHidden = !favoriteBooks.isEmpty
         }
     }
     

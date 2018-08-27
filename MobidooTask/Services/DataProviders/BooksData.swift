@@ -14,7 +14,7 @@ class BooksData {
     static let shared = BooksData()
     
     func getData() {
-        Alamofire.request("http://knigo-lub.info/books/genres/221").responseJSON { [weak self] (response) in
+        Alamofire.request("http://knigo-lub.info/books/genres/225").responseJSON { [weak self] (response) in
             if let unparsedBooks = response.result.value as? [[String: Any]] {
                 self?.booksList.removeAll()
                 for book in unparsedBooks {

@@ -12,13 +12,12 @@ import StoreKit
 class Utiles {
     
     static func rate() {
-        
         guard let url = URL(string: "") else { //add string url to app: itms-apps://itunes.apple.com/...
             return
         }
         
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        if #available( iOS 10.3,*){
+            SKStoreReviewController.requestReview()
         } else {
             UIApplication.shared.openURL(url)
         }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		995346A92132F12700EC8B46 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995346A82132F12700EC8B46 /* PrivacyPolicyViewController.swift */; };
+		995346AB213336F500EC8B46 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995346AA213336F500EC8B46 /* Consts.swift */; };
 		9989F2D2212B29F7000C8754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989F2D1212B29F7000C8754 /* AppDelegate.swift */; };
 		9989F2D7212B29F7000C8754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9989F2D5212B29F7000C8754 /* Main.storyboard */; };
 		9989F2D9212B29FA000C8754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9989F2D8212B29FA000C8754 /* Assets.xcassets */; };
@@ -48,6 +50,8 @@
 
 /* Begin PBXFileReference section */
 		831692D8EBC845DA86646FC9 /* Pods-MobidooTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobidooTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobidooTask/Pods-MobidooTask.debug.xcconfig"; sourceTree = "<group>"; };
+		995346A82132F12700EC8B46 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		995346AA213336F500EC8B46 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		9989F2CE212B29F7000C8754 /* MobidooTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobidooTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9989F2D1212B29F7000C8754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9989F2D6212B29F7000C8754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 				9989F308212B2E4B000C8754 /* FavoritesViewController.swift */,
 				9989F317212C37C4000C8754 /* ContentViewController.swift */,
 				9989F313212B43D6000C8754 /* SettingsTableViewController.swift */,
+				995346A82132F12700EC8B46 /* PrivacyPolicyViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			children = (
 				99B66128212F87E000E727CE /* Extensions.swift */,
 				9989F315212B45BD000C8754 /* Utiles.swift */,
+				995346AA213336F500EC8B46 /* Consts.swift */,
 				99B6612A212F880500E727CE /* DataProviders */,
 				9989F31B212C7760000C8754 /* Storage.swift */,
 			);
@@ -421,12 +427,14 @@
 				99953BA1212F52AC00CA5944 /* ContentData.swift in Sources */,
 				9989F31C212C7760000C8754 /* Storage.swift in Sources */,
 				9989F2D2212B29F7000C8754 /* AppDelegate.swift in Sources */,
+				995346A92132F12700EC8B46 /* PrivacyPolicyViewController.swift in Sources */,
 				9989F305212B2C8A000C8754 /* Book.swift in Sources */,
 				9989F309212B2E4B000C8754 /* FavoritesViewController.swift in Sources */,
 				9989F318212C37C4000C8754 /* ContentViewController.swift in Sources */,
 				9989F30B212B2EAD000C8754 /* Cells.swift in Sources */,
 				99B66129212F87E000E727CE /* Extensions.swift in Sources */,
 				9989F307212B2E1C000C8754 /* BooksListViewController.swift in Sources */,
+				995346AB213336F500EC8B46 /* Consts.swift in Sources */,
 				9989F314212B43D6000C8754 /* SettingsTableViewController.swift in Sources */,
 				9989F316212B45BD000C8754 /* Utiles.swift in Sources */,
 			);

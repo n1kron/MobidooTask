@@ -22,7 +22,7 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
     func sendEmail() {
         let composeVC = MFMailComposeViewController()
         composeVC.mailComposeDelegate = self
-        composeVC.setToRecipients(["example@mail.com"]) // add corporate email
+        composeVC.setToRecipients(["info@mobidoo.io"])
         composeVC.setSubject("")
         composeVC.setMessageBody("", isHTML: false)
         self.present(composeVC, animated: true, completion: nil)
@@ -46,7 +46,6 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
                     return
                 }
                 sendEmail()
-            case 3 : return //add privacy policy
             default: return
             }
         }
