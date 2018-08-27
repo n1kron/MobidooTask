@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		995346A92132F12700EC8B46 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995346A82132F12700EC8B46 /* PrivacyPolicyViewController.swift */; };
 		995346AB213336F500EC8B46 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995346AA213336F500EC8B46 /* Consts.swift */; };
+		995346B1213467AE00EC8B46 /* SuggestCell+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995346B0213467AE00EC8B46 /* SuggestCell+CollectionView.swift */; };
 		9989F2D2212B29F7000C8754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989F2D1212B29F7000C8754 /* AppDelegate.swift */; };
 		9989F2D7212B29F7000C8754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9989F2D5212B29F7000C8754 /* Main.storyboard */; };
 		9989F2D9212B29FA000C8754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9989F2D8212B29FA000C8754 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		995346A82132F12700EC8B46 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		995346AA213336F500EC8B46 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		995346AE21342BE700EC8B46 /* SwiftyOnboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyOnboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		995346B0213467AE00EC8B46 /* SuggestCell+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SuggestCell+CollectionView.swift"; sourceTree = "<group>"; };
 		9989F2CE212B29F7000C8754 /* MobidooTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobidooTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9989F2D1212B29F7000C8754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9989F2D6212B29F7000C8754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				9989F30A212B2EAD000C8754 /* Cells.swift */,
+				995346B0213467AE00EC8B46 /* SuggestCell+CollectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				9989F318212C37C4000C8754 /* ContentViewController.swift in Sources */,
 				9989F30B212B2EAD000C8754 /* Cells.swift in Sources */,
 				99B66129212F87E000E727CE /* Extensions.swift in Sources */,
+				995346B1213467AE00EC8B46 /* SuggestCell+CollectionView.swift in Sources */,
 				9989F307212B2E1C000C8754 /* BooksListViewController.swift in Sources */,
 				995346AB213336F500EC8B46 /* Consts.swift in Sources */,
 				9989F314212B43D6000C8754 /* SettingsTableViewController.swift in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GIq-zc-PrU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lnr-w6-AUj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -272,16 +272,16 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aDj-I6-P51">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="123"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aDj-I6-P51">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
                                                     </imageView>
                                                 </subviews>
                                             </view>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="aDj-I6-P51" secondAttribute="bottom" id="7ik-Su-2hn"/>
                                                 <constraint firstItem="aDj-I6-P51" firstAttribute="top" secondItem="yCv-f0-yBr" secondAttribute="top" id="Tp0-rV-GDl"/>
                                                 <constraint firstItem="aDj-I6-P51" firstAttribute="leading" secondItem="yCv-f0-yBr" secondAttribute="leading" id="hv0-cV-dGs"/>
                                                 <constraint firstAttribute="trailing" secondItem="aDj-I6-P51" secondAttribute="trailing" id="lz9-U2-aVg"/>
+                                                <constraint firstAttribute="bottom" secondItem="aDj-I6-P51" secondAttribute="bottom" id="u58-4W-1Sq"/>
                                             </constraints>
                                             <connections>
                                                 <outlet property="sliderImageView" destination="aDj-I6-P51" id="JAY-3q-Ahv"/>
@@ -430,13 +430,65 @@
                     <view key="view" contentMode="scaleToFill" id="fSr-bf-dcU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T17-Uo-Vns">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ot-CO-IAw">
+                                        <rect key="frame" x="0.0" y="0.0" width="1125" height="667"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard0" translatesAutoresizingMaskIntoConstraints="NO" id="ur8-87-g0z">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard1" translatesAutoresizingMaskIntoConstraints="NO" id="AUy-IC-QzH">
+                                                <rect key="frame" x="375" y="0.0" width="375" height="667"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard2" translatesAutoresizingMaskIntoConstraints="NO" id="OLB-kF-GKM">
+                                                <rect key="frame" x="750" y="0.0" width="375" height="667"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="AUy-IC-QzH" firstAttribute="width" secondItem="T17-Uo-Vns" secondAttribute="width" id="0E1-2g-6az"/>
+                                    <constraint firstItem="ur8-87-g0z" firstAttribute="width" secondItem="T17-Uo-Vns" secondAttribute="width" id="1vZ-sa-wII"/>
+                                    <constraint firstItem="AUy-IC-QzH" firstAttribute="height" secondItem="T17-Uo-Vns" secondAttribute="height" id="AMn-Yq-N3E"/>
+                                    <constraint firstItem="6ot-CO-IAw" firstAttribute="top" secondItem="T17-Uo-Vns" secondAttribute="top" id="Ban-AB-F7m"/>
+                                    <constraint firstItem="OLB-kF-GKM" firstAttribute="height" secondItem="T17-Uo-Vns" secondAttribute="height" id="Eqe-eJ-TVr"/>
+                                    <constraint firstItem="6ot-CO-IAw" firstAttribute="leading" secondItem="T17-Uo-Vns" secondAttribute="leading" id="Gq1-XI-aa0"/>
+                                    <constraint firstItem="OLB-kF-GKM" firstAttribute="width" secondItem="T17-Uo-Vns" secondAttribute="width" id="HaS-wO-GH2"/>
+                                    <constraint firstAttribute="bottom" secondItem="6ot-CO-IAw" secondAttribute="bottom" id="KfH-Tk-ZNY"/>
+                                    <constraint firstAttribute="trailing" secondItem="6ot-CO-IAw" secondAttribute="trailing" id="VSp-70-EzA"/>
+                                    <constraint firstItem="ur8-87-g0z" firstAttribute="height" secondItem="T17-Uo-Vns" secondAttribute="height" id="leM-hD-K6y"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aS3-Ly-aQB">
+                                <rect key="frame" x="132" y="612.5" width="110" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Пропустить">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GIq-zc-PrU" kind="show" id="BqM-5s-DPn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aYj-02-OVc" firstAttribute="bottom" secondItem="T17-Uo-Vns" secondAttribute="bottom" id="2KJ-3u-rdf"/>
+                            <constraint firstItem="aYj-02-OVc" firstAttribute="trailing" secondItem="T17-Uo-Vns" secondAttribute="trailing" id="KE9-6h-45Y"/>
+                            <constraint firstItem="aS3-Ly-aQB" firstAttribute="centerX" secondItem="fSr-bf-dcU" secondAttribute="centerX" id="QTR-SB-btS"/>
+                            <constraint firstItem="T17-Uo-Vns" firstAttribute="centerX" secondItem="fSr-bf-dcU" secondAttribute="centerX" id="jt7-Ns-eUk"/>
+                            <constraint firstItem="T17-Uo-Vns" firstAttribute="leading" secondItem="aYj-02-OVc" secondAttribute="leading" id="jwI-7D-46x"/>
+                            <constraint firstItem="aS3-Ly-aQB" firstAttribute="centerY" secondItem="fSr-bf-dcU" secondAttribute="centerY" multiplier="1.89" id="pHO-oA-SsL"/>
+                            <constraint firstItem="T17-Uo-Vns" firstAttribute="centerY" secondItem="fSr-bf-dcU" secondAttribute="centerY" id="rUN-YY-cX3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aYj-02-OVc"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OCs-WG-Mgp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-668" y="-34"/>
+            <point key="canvasLocation" x="110" y="-800"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RfP-yd-cyy">
@@ -694,6 +746,9 @@
     <resources>
         <image name="favourite" width="26" height="26"/>
         <image name="main" width="26" height="26"/>
+        <image name="onboard0" width="250" height="444"/>
+        <image name="onboard1" width="250" height="444"/>
+        <image name="onboard2" width="250" height="444"/>
         <image name="settings" width="26" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>

@@ -83,25 +83,6 @@ extension BooksListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-//MARK:- UIFavoriteViewDelegate
-extension BooksListViewController: UIFavoriteViewDelegate {
-    func favoritePressed(cell: UITableViewCell) {
-        if let indexPathTapped = booksTableView.indexPath(for: cell) {
-            let book = BooksData.shared.booksList[indexPathTapped.row]
-            
-            if favoriteBooks.contains(book) {
-                if let index = favoriteBooks.index(of: book) {
-                    favoriteBooks.remove(at: index)
-                }
-            } else {
-                favoriteBooks.append(book)
-            }
-            storage.save()
-        }
-    }
-}
-
-
 //MARK:- Slider
 extension BooksListViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -124,6 +105,24 @@ extension BooksListViewController: UICollectionViewDelegate, UICollectionViewDat
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SliderCollectionViewCell", for: indexPath) as! SliderCollectionViewCell
         cell.sliderImageView.image = UIImage(named: "slider\(indexPath.row)")
         return cell
+    }
+}
+
+//MARK:- Delegates
+extension BooksListViewController: UIFavoriteViewDelegate {
+    func favoritePressed(cell: UITableViewCell) {
+        if let indexPathTapped = booksTableView.indexPath(for: cell) {
+            let book = BooksData.shared.booksList[indexPathTapped.row]
+            
+            if favoriteBooks.contains(book) {
+                if let index = favoriteBooks.index(of: book) {
+                    favoriteBooks.remove(at: index)
+                }
+            } else {
+                favoriteBooks.append(book)
+            }
+            storage.save()
+        }
     }
 }
 

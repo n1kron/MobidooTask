@@ -1,0 +1,38 @@
+//
+//  SuggestCell+CollectionView.swift
+//  MobidooTask
+//
+//  Created by  Kostantin Zarubin on 27.08.2018.
+//  Copyright © 2018  Kostantin Zarubin. All rights reserved.
+//
+
+import UIKit
+
+class SuggestTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
+    @IBOutlet weak var suggestCollectionView: UICollectionView!
+    weak var delegate: UISuggestViewDelegate?
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        suggestCollectionView.delegate = self
+        suggestCollectionView.dataSource = self
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return Consts.suggestBooks.all.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SuggestCollectionViewCell", for: indexPath) as! SuggestCollectionViewCell
+        let bookId = Consts.suggestBooks.all[indexPath.row]
+        if let book = BooksData.shared.booksList.first(where: {$0.id == bookId}) {
+            cell.suggestImageView.kf.setImage(with: URL(string: book.cover), completionHandler: { (image, error, cacheType, imageUrl) in
+            })
+        }
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.suggestPressed(id: Consts.suggestBooks.all[indexPath.row])
+    }
+}
