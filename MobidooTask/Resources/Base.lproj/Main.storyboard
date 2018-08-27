@@ -272,16 +272,19 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aDj-I6-P51">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
+                                                    <imageView verifyAmbiguity="off" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aDj-I6-P51">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="187.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="aDj-I6-P51" secondAttribute="height" multiplier="1000:500" id="FqD-ay-jya"/>
+                                                        </constraints>
                                                     </imageView>
                                                 </subviews>
                                             </view>
                                             <constraints>
-                                                <constraint firstItem="aDj-I6-P51" firstAttribute="top" secondItem="yCv-f0-yBr" secondAttribute="top" id="Tp0-rV-GDl"/>
-                                                <constraint firstItem="aDj-I6-P51" firstAttribute="leading" secondItem="yCv-f0-yBr" secondAttribute="leading" id="hv0-cV-dGs"/>
-                                                <constraint firstAttribute="trailing" secondItem="aDj-I6-P51" secondAttribute="trailing" id="lz9-U2-aVg"/>
-                                                <constraint firstAttribute="bottom" secondItem="aDj-I6-P51" secondAttribute="bottom" id="u58-4W-1Sq"/>
+                                                <constraint firstItem="aDj-I6-P51" firstAttribute="leading" secondItem="yCv-f0-yBr" secondAttribute="leading" id="Aej-yT-RMN"/>
+                                                <constraint firstAttribute="trailing" secondItem="aDj-I6-P51" secondAttribute="trailing" id="Kjq-xi-se1"/>
+                                                <constraint firstItem="aDj-I6-P51" firstAttribute="top" secondItem="yCv-f0-yBr" secondAttribute="top" id="PqF-oZ-3bA"/>
+                                                <constraint firstItem="aDj-I6-P51" firstAttribute="centerX" secondItem="yCv-f0-yBr" secondAttribute="centerX" id="gO0-HG-CYa"/>
                                             </constraints>
                                             <connections>
                                                 <outlet property="sliderImageView" destination="aDj-I6-P51" id="JAY-3q-Ahv"/>
@@ -377,7 +380,7 @@
                                                 </collectionView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рекомендации к прочтению:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s92-r1-Nhq">
                                                     <rect key="frame" x="10" y="10" width="355" height="18.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -421,7 +424,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uR4-Iz-jJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1909.5999999999999" y="-340.47976011994007"/>
+            <point key="canvasLocation" x="1980" y="-346"/>
         </scene>
         <!--Onboarding View Controller-->
         <scene sceneID="BDG-RE-nJS">

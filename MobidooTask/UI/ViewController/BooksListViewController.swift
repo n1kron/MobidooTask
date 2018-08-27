@@ -104,6 +104,7 @@ extension BooksListViewController: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SliderCollectionViewCell", for: indexPath) as! SliderCollectionViewCell
         cell.sliderImageView.image = UIImage(named: "slider\(indexPath.row)")
+        cell.sliderImageView.frame.size.width = UIScreen.main.bounds.size.width
         return cell
     }
 }
