@@ -444,13 +444,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ot-CO-IAw">
                                         <rect key="frame" x="0.0" y="0.0" width="1125" height="667"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard0" translatesAutoresizingMaskIntoConstraints="NO" id="ur8-87-g0z">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard0" translatesAutoresizingMaskIntoConstraints="NO" id="ur8-87-g0z">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard1" translatesAutoresizingMaskIntoConstraints="NO" id="AUy-IC-QzH">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard1" translatesAutoresizingMaskIntoConstraints="NO" id="AUy-IC-QzH">
                                                 <rect key="frame" x="375" y="0.0" width="375" height="667"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard2" translatesAutoresizingMaskIntoConstraints="NO" id="OLB-kF-GKM">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard2" translatesAutoresizingMaskIntoConstraints="NO" id="OLB-kF-GKM">
                                                 <rect key="frame" x="750" y="0.0" width="375" height="667"/>
                                             </imageView>
                                         </subviews>
