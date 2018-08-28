@@ -10,6 +10,7 @@ import UIKit
 
 class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var onboardingScrollView: UIScrollView!
+    var transitionСompleted = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,8 +18,8 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     }
     
      func scrollViewDidScroll(_ scrollView: UIScrollView)  {
-        print(scrollView.contentOffset.x)
-        if scrollView.contentOffset.x > scrollView.contentSize.width - scrollView.bounds.width + scrollView.contentInset.right + 10 {
+        if scrollView.contentOffset.x > scrollView.contentSize.width - scrollView.bounds.width + scrollView.contentInset.right + 10 && !transitionСompleted {
+            transitionСompleted = true
             performSegue(withIdentifier: "ShowApp", sender: nil)
         }
     }

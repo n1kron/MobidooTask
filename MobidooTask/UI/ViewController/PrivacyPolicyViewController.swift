@@ -13,6 +13,9 @@ class PrivacyPolicyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if Consts.isIpad {
+            privacyPolicyTextView.font = privacyPolicyTextView.font?.withSize(25)
+        }
     }
     
     override func viewDidLayoutSubviews() {
