@@ -40,7 +40,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="JTs-li-tmr">
                                                     <rect key="frame" x="108.5" y="21" width="241.5" height="60"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -306,7 +306,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="lI8-hm-Dro">
                                                     <rect key="frame" x="122.5" y="21" width="227.5" height="77"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -374,21 +374,21 @@
                                                         </collectionViewCell>
                                                     </cells>
                                                 </collectionView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рекомендации к прочтению:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s92-r1-Nhq">
-                                                    <rect key="frame" x="10" y="10" width="355" height="37.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рекомендации к прочтению:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s92-r1-Nhq">
+                                                    <rect key="frame" x="20" y="15" width="335" height="22.5"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.22745098039215686" green="0.50980392156862742" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstItem="kaN-kA-Q9T" firstAttribute="top" secondItem="s92-r1-Nhq" secondAttribute="bottom" constant="5" id="KOI-Iy-ZhW"/>
-                                                <constraint firstItem="s92-r1-Nhq" firstAttribute="leading" secondItem="kll-7w-ptq" secondAttribute="leading" constant="10" id="bxd-Pr-ABB"/>
+                                                <constraint firstItem="kaN-kA-Q9T" firstAttribute="top" secondItem="s92-r1-Nhq" secondAttribute="bottom" constant="15" id="KOI-Iy-ZhW"/>
+                                                <constraint firstItem="s92-r1-Nhq" firstAttribute="leading" secondItem="kll-7w-ptq" secondAttribute="leading" constant="20" id="bxd-Pr-ABB"/>
                                                 <constraint firstItem="kaN-kA-Q9T" firstAttribute="leading" secondItem="kll-7w-ptq" secondAttribute="leading" id="chM-2B-FnO"/>
                                                 <constraint firstAttribute="bottom" secondItem="kaN-kA-Q9T" secondAttribute="bottom" constant="20" id="fqO-Jn-3q2"/>
-                                                <constraint firstItem="s92-r1-Nhq" firstAttribute="top" secondItem="kll-7w-ptq" secondAttribute="top" constant="10" id="jvy-Ch-hUx"/>
-                                                <constraint firstAttribute="trailing" secondItem="s92-r1-Nhq" secondAttribute="trailing" constant="10" id="tar-RP-ot5"/>
+                                                <constraint firstItem="s92-r1-Nhq" firstAttribute="top" secondItem="kll-7w-ptq" secondAttribute="top" constant="15" id="jvy-Ch-hUx"/>
+                                                <constraint firstAttribute="trailing" secondItem="s92-r1-Nhq" secondAttribute="trailing" constant="20" id="tar-RP-ot5"/>
                                                 <constraint firstAttribute="trailing" secondItem="kaN-kA-Q9T" secondAttribute="trailing" id="zHh-7Y-qMC"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -396,6 +396,7 @@
                                         <connections>
                                             <outlet property="collectionHeightConstraint" destination="N8s-8V-ElB" id="8Cz-R7-fil"/>
                                             <outlet property="suggestCollectionView" destination="kaN-kA-Q9T" id="hrR-KH-jUb"/>
+                                            <outlet property="suggestLabel" destination="s92-r1-Nhq" id="hHD-Gh-h3d"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -747,6 +748,6 @@
         <image name="settings" width="26" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KIB-8T-ggW"/>
+        <segue reference="eD6-12-CEM"/>
     </inferredMetricsTieBreakers>
 </document>

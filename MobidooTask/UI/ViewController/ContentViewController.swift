@@ -36,7 +36,7 @@ class ContentViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         contentCollectionView.isHidden = true
-        activityIndicator.center = view.center
+        activityIndicator.center = CGPoint(x: UIScreen.main.bounds.size.width / 2, y: UIScreen.main.bounds.size.height / 2 - (navigationController?.navigationBar.frame.height)!)
         activityIndicator.hidesWhenStopped = true
         activityIndicator.activityIndicatorViewStyle = .gray
         activityIndicator.transform = CGAffineTransform(scaleX: 2, y: 2)

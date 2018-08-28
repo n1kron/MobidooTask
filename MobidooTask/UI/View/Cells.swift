@@ -32,7 +32,7 @@ class BookTableViewCell: UITableViewCell {
         accessoryView = starButton
         
         if !Consts.isIpad {
-            titleLabel.font = titleLabel.font.withSize(17)
+            titleLabel.font = UIScreen.main.bounds.size.height == 568.0 ? titleLabel.font.withSize(15) : titleLabel.font.withSize(17)
         }
     }
     
@@ -53,7 +53,7 @@ class FavoriteTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         if !Consts.isIpad {
-            favoriteLabel.font = favoriteLabel.font.withSize(17)
+            favoriteLabel.font = UIScreen.main.bounds.size.height == 568.0 ? favoriteLabel.font.withSize(15) : favoriteLabel.font.withSize(17)
         }
     }
 }

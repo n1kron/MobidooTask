@@ -10,7 +10,9 @@ import UIKit
 
 class SuggestTableViewCell: UITableViewCell {
     @IBOutlet weak var suggestCollectionView: UICollectionView!
+    @IBOutlet weak var suggestLabel: UILabel!
     @IBOutlet weak var collectionHeightConstraint: NSLayoutConstraint!
+    
     weak var delegate: UISuggestViewDelegate?
     
     override func awakeFromNib() {
@@ -18,6 +20,8 @@ class SuggestTableViewCell: UITableViewCell {
         suggestCollectionView.delegate = self
         suggestCollectionView.dataSource = self
         collectionHeightConstraint.constant = Consts.isIpad ? UIScreen.main.bounds.size.height * 0.3 : UIScreen.main.bounds.size.height * 0.18
+        
+        suggestLabel.font = Consts.isIpad ? suggestLabel.font.withSize(25) : suggestLabel.font.withSize(17)
     }
 }
 

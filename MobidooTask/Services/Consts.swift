@@ -22,7 +22,7 @@ class Consts {
     
     struct suggestBooks {
         static let firstBook = 209829
-        static let secondBook = 593579
+        static let secondBook = 1327
         static let thirdBook = 584480
         static let fourthBook = 236397
         static let fifthBook = 197373

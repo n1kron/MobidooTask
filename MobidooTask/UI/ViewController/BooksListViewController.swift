@@ -115,7 +115,7 @@ extension BooksListViewController: UICollectionViewDelegate, UICollectionViewDat
 extension BooksListViewController: UIFavoriteViewDelegate {
     func favoritePressed(cell: UITableViewCell) {
         if let indexPathTapped = booksTableView.indexPath(for: cell) {
-            let book = BooksData.shared.booksList[indexPathTapped.row]
+            let book = indexPathTapped.row > 3 ? BooksData.shared.booksList[indexPathTapped.row - 1] : BooksData.shared.booksList[indexPathTapped.row]
             
             if favoriteBooks.contains(book) {
                 if let index = favoriteBooks.index(of: book) {
