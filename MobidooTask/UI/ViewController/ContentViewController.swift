@@ -65,7 +65,7 @@ extension ContentViewController: UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.row == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FirstPageTableViewCell", for: indexPath) as! FirstPageCollectionViewCell
-            cell.authorLabel.text = author
+            cell.authorLabel.text = "Автор: \(author)"
             cell.titleLabel.text = bookTitle
             cell.coverImageView.kf.setImage(with: URL(string: cover), completionHandler: { (image, error, cacheType, imageUrl) in
             })

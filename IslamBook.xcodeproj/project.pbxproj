@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99258F1A21354FC100CF92A2 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99258F1921354FC100CF92A2 /* OnboardingViewController.swift */; };
 		995346A92132F12700EC8B46 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995346A82132F12700EC8B46 /* PrivacyPolicyViewController.swift */; };
 		995346AB213336F500EC8B46 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995346AA213336F500EC8B46 /* Consts.swift */; };
 		995346B1213467AE00EC8B46 /* SuggestCell+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995346B0213467AE00EC8B46 /* SuggestCell+CollectionView.swift */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		831692D8EBC845DA86646FC9 /* Pods-MobidooTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobidooTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobidooTask/Pods-MobidooTask.debug.xcconfig"; sourceTree = "<group>"; };
+		99258F1921354FC100CF92A2 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		995346A82132F12700EC8B46 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		995346AA213336F500EC8B46 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		995346AE21342BE700EC8B46 /* SwiftyOnboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyOnboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +213,7 @@
 				9989F317212C37C4000C8754 /* ContentViewController.swift */,
 				9989F313212B43D6000C8754 /* SettingsTableViewController.swift */,
 				995346A82132F12700EC8B46 /* PrivacyPolicyViewController.swift */,
+				99258F1921354FC100CF92A2 /* OnboardingViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				9989F30B212B2EAD000C8754 /* Cells.swift in Sources */,
 				99B66129212F87E000E727CE /* Extensions.swift in Sources */,
 				995346B1213467AE00EC8B46 /* SuggestCell+CollectionView.swift in Sources */,
+				99258F1A21354FC100CF92A2 /* OnboardingViewController.swift in Sources */,
 				9989F307212B2E1C000C8754 /* BooksListViewController.swift in Sources */,
 				995346AB213336F500EC8B46 /* Consts.swift in Sources */,
 				9989F314212B43D6000C8754 /* SettingsTableViewController.swift in Sources */,

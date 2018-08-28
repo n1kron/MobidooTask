@@ -17,7 +17,7 @@ class SuggestTableViewCell: UITableViewCell {
         super.awakeFromNib()
         suggestCollectionView.delegate = self
         suggestCollectionView.dataSource = self
-        collectionHeightConstraint.constant = UIScreen.main.bounds.size.height * 0.1604
+        collectionHeightConstraint.constant = Consts.isIpad ? UIScreen.main.bounds.size.height * 0.3 : UIScreen.main.bounds.size.height * 0.18
     }
 }
 

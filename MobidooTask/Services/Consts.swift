@@ -10,6 +10,8 @@ import UIKit
 
 class Consts {
     
+    static let isIpad: Bool = UIDevice.current.userInterfaceIdiom == .pad
+    
     struct sliderBooks {
         static let firstBook = 93025
         static let secondBook = 92870

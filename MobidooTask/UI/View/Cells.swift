@@ -24,6 +24,7 @@ class BookTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        titleLabel.font = Consts.isIpad ? titleLabel.font.withSize(22) : titleLabel.font.withSize(17)
         starButton.setBackgroundImage(#imageLiteral(resourceName: "star"), for: .normal)
         starButton.setBackgroundImage(#imageLiteral(resourceName: "star_pushed"), for: .selected)
         starButton.tintColor = .clear
@@ -46,16 +47,31 @@ class SuggestCollectionViewCell: UICollectionViewCell {
 class FavoriteTableViewCell: UITableViewCell {
     @IBOutlet weak var favoriteImageView: UIImageView!
     @IBOutlet weak var favoriteLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        favoriteLabel.font = Consts.isIpad ? favoriteLabel.font.withSize(24) : favoriteLabel.font.withSize(17)
+    }
 }
 
 class FirstPageCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var coverImageView: UIImageView!
     @IBOutlet weak var authorLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        titleLabel.font = Consts.isIpad ? titleLabel.font.withSize(25) : titleLabel.font.withSize(17)
+        authorLabel.font = Consts.isIpad ? authorLabel.font.withSize(25) : authorLabel.font.withSize(17)
+    }
 }
 
 class ContentCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var contentLabel: UILabel!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        contentLabel.font = Consts.isIpad ? contentLabel.font.withSize(24) : contentLabel.font.withSize(17)
+    }
 }
 
 class SliderCollectionViewCell: UICollectionViewCell {
