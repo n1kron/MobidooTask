@@ -3,7 +3,7 @@
 # Uncomment this line if you're using Swift
 use_frameworks!
 
-target 'MobidooTask' do
+target 'IslamBook' do
 pod 'Alamofire'
 pod 'Kingfisher'
 end
