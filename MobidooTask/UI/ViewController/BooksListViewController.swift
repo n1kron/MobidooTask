@@ -12,6 +12,7 @@ import Kingfisher
 class BooksListViewController: UIViewController {
 
     @IBOutlet weak var booksTableView: UITableView!
+    @IBOutlet weak var sliderCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,7 @@ class BooksListViewController: UIViewController {
             self?.booksTableView.isHidden = false
             self?.booksTableView.reloadData()
         }
+        sliderCollectionView.frame.size.height = UIScreen.main.bounds.size.height * 0.22
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -90,7 +92,7 @@ extension BooksListViewController: UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.size.width , height: collectionView.bounds.size.height )
+        return CGSize(width: collectionView.bounds.size.width , height: collectionView.bounds.size.height)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

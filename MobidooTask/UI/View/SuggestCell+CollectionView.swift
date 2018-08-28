@@ -8,16 +8,20 @@
 
 import UIKit
 
-class SuggestTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
+class SuggestTableViewCell: UITableViewCell {
     @IBOutlet weak var suggestCollectionView: UICollectionView!
+    @IBOutlet weak var collectionHeightConstraint: NSLayoutConstraint!
     weak var delegate: UISuggestViewDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         suggestCollectionView.delegate = self
         suggestCollectionView.dataSource = self
+        collectionHeightConstraint.constant = UIScreen.main.bounds.size.height * 0.1604
     }
-    
+}
+
+extension SuggestTableViewCell:  UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return Consts.suggestBooks.all.count
     }
@@ -30,6 +34,14 @@ class SuggestTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollect
             })
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.frame.size.width / 4, height: self.frame.size.height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: UIScreen.main.bounds.size.width / 18.75, bottom: 0, right: UIScreen.main.bounds.size.width / 18.75)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

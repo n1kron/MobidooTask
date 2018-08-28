@@ -40,6 +40,7 @@ class BookTableViewCell: UITableViewCell {
 
 class SuggestCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var suggestImageView: UIImageView!
+    
 }
 
 class FavoriteTableViewCell: UITableViewCell {
