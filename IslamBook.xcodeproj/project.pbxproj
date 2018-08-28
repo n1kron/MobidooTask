@@ -55,16 +55,16 @@
 		995346AA213336F500EC8B46 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		995346AE21342BE700EC8B46 /* SwiftyOnboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyOnboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		995346B0213467AE00EC8B46 /* SuggestCell+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SuggestCell+CollectionView.swift"; sourceTree = "<group>"; };
-		9989F2CE212B29F7000C8754 /* MobidooTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobidooTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9989F2CE212B29F7000C8754 /* IslamBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IslamBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9989F2D1212B29F7000C8754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9989F2D6212B29F7000C8754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9989F2D8212B29FA000C8754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9989F2DB212B29FA000C8754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9989F2DD212B29FA000C8754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9989F2E2212B29FA000C8754 /* MobidooTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobidooTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9989F2E2212B29FA000C8754 /* IslamBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IslamBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9989F2E6212B29FA000C8754 /* MobidooTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobidooTaskTests.swift; sourceTree = "<group>"; };
 		9989F2E8212B29FA000C8754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9989F2ED212B29FA000C8754 /* MobidooTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobidooTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9989F2ED212B29FA000C8754 /* IslamBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IslamBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9989F2F1212B29FA000C8754 /* MobidooTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobidooTaskUITests.swift; sourceTree = "<group>"; };
 		9989F2F3212B29FA000C8754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9989F304212B2C8A000C8754 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
@@ -138,9 +138,9 @@
 		9989F2CF212B29F7000C8754 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9989F2CE212B29F7000C8754 /* MobidooTask.app */,
-				9989F2E2212B29FA000C8754 /* MobidooTaskTests.xctest */,
-				9989F2ED212B29FA000C8754 /* MobidooTaskUITests.xctest */,
+				9989F2CE212B29F7000C8754 /* IslamBook.app */,
+				9989F2E2212B29FA000C8754 /* IslamBookTests.xctest */,
+				9989F2ED212B29FA000C8754 /* IslamBookUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,9 +257,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9989F2CD212B29F7000C8754 /* MobidooTask */ = {
+		9989F2CD212B29F7000C8754 /* IslamBook */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9989F2F6212B29FA000C8754 /* Build configuration list for PBXNativeTarget "MobidooTask" */;
+			buildConfigurationList = 9989F2F6212B29FA000C8754 /* Build configuration list for PBXNativeTarget "IslamBook" */;
 			buildPhases = (
 				87F525633587E033F1FA25A7 /* [CP] Check Pods Manifest.lock */,
 				9989F2CA212B29F7000C8754 /* Sources */,
@@ -271,14 +271,14 @@
 			);
 			dependencies = (
 			);
-			name = MobidooTask;
+			name = IslamBook;
 			productName = MobidooTask;
-			productReference = 9989F2CE212B29F7000C8754 /* MobidooTask.app */;
+			productReference = 9989F2CE212B29F7000C8754 /* IslamBook.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9989F2E1212B29FA000C8754 /* MobidooTaskTests */ = {
+		9989F2E1212B29FA000C8754 /* IslamBookTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9989F2F9212B29FA000C8754 /* Build configuration list for PBXNativeTarget "MobidooTaskTests" */;
+			buildConfigurationList = 9989F2F9212B29FA000C8754 /* Build configuration list for PBXNativeTarget "IslamBookTests" */;
 			buildPhases = (
 				9989F2DE212B29FA000C8754 /* Sources */,
 				9989F2DF212B29FA000C8754 /* Frameworks */,
@@ -289,14 +289,14 @@
 			dependencies = (
 				9989F2E4212B29FA000C8754 /* PBXTargetDependency */,
 			);
-			name = MobidooTaskTests;
+			name = IslamBookTests;
 			productName = MobidooTaskTests;
-			productReference = 9989F2E2212B29FA000C8754 /* MobidooTaskTests.xctest */;
+			productReference = 9989F2E2212B29FA000C8754 /* IslamBookTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9989F2EC212B29FA000C8754 /* MobidooTaskUITests */ = {
+		9989F2EC212B29FA000C8754 /* IslamBookUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9989F2FC212B29FA000C8754 /* Build configuration list for PBXNativeTarget "MobidooTaskUITests" */;
+			buildConfigurationList = 9989F2FC212B29FA000C8754 /* Build configuration list for PBXNativeTarget "IslamBookUITests" */;
 			buildPhases = (
 				9989F2E9212B29FA000C8754 /* Sources */,
 				9989F2EA212B29FA000C8754 /* Frameworks */,
@@ -307,9 +307,9 @@
 			dependencies = (
 				9989F2EF212B29FA000C8754 /* PBXTargetDependency */,
 			);
-			name = MobidooTaskUITests;
+			name = IslamBookUITests;
 			productName = MobidooTaskUITests;
-			productReference = 9989F2ED212B29FA000C8754 /* MobidooTaskUITests.xctest */;
+			productReference = 9989F2ED212B29FA000C8754 /* IslamBookUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -335,7 +335,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9989F2C9212B29F7000C8754 /* Build configuration list for PBXProject "MobidooTask" */;
+			buildConfigurationList = 9989F2C9212B29F7000C8754 /* Build configuration list for PBXProject "IslamBook" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -348,9 +348,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9989F2CD212B29F7000C8754 /* MobidooTask */,
-				9989F2E1212B29FA000C8754 /* MobidooTaskTests */,
-				9989F2EC212B29FA000C8754 /* MobidooTaskUITests */,
+				9989F2CD212B29F7000C8754 /* IslamBook */,
+				9989F2E1212B29FA000C8754 /* IslamBookTests */,
+				9989F2EC212B29FA000C8754 /* IslamBookUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -467,12 +467,12 @@
 /* Begin PBXTargetDependency section */
 		9989F2E4212B29FA000C8754 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9989F2CD212B29F7000C8754 /* MobidooTask */;
+			target = 9989F2CD212B29F7000C8754 /* IslamBook */;
 			targetProxy = 9989F2E3212B29FA000C8754 /* PBXContainerItemProxy */;
 		};
 		9989F2EF212B29FA000C8754 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9989F2CD212B29F7000C8754 /* MobidooTask */;
+			target = 9989F2CD212B29F7000C8754 /* IslamBook */;
 			targetProxy = 9989F2EE212B29FA000C8754 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -622,7 +622,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.MobidooTask;
+				PRODUCT_BUNDLE_IDENTIFIER = org.IslamBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -640,7 +640,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.MobidooTask;
+				PRODUCT_BUNDLE_IDENTIFIER = org.IslamBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -663,7 +663,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobidooTask.app/MobidooTask";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IslamBook.app/IslamBook";
 			};
 			name = Debug;
 		};
@@ -683,7 +683,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobidooTask.app/MobidooTask";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IslamBook.app/IslamBook";
 			};
 			name = Release;
 		};
@@ -728,7 +728,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9989F2C9212B29F7000C8754 /* Build configuration list for PBXProject "MobidooTask" */ = {
+		9989F2C9212B29F7000C8754 /* Build configuration list for PBXProject "IslamBook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9989F2F4212B29FA000C8754 /* Debug */,
@@ -737,7 +737,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9989F2F6212B29FA000C8754 /* Build configuration list for PBXNativeTarget "MobidooTask" */ = {
+		9989F2F6212B29FA000C8754 /* Build configuration list for PBXNativeTarget "IslamBook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9989F2F7212B29FA000C8754 /* Debug */,
@@ -746,7 +746,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9989F2F9212B29FA000C8754 /* Build configuration list for PBXNativeTarget "MobidooTaskTests" */ = {
+		9989F2F9212B29FA000C8754 /* Build configuration list for PBXNativeTarget "IslamBookTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9989F2FA212B29FA000C8754 /* Debug */,
@@ -755,7 +755,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9989F2FC212B29FA000C8754 /* Build configuration list for PBXNativeTarget "MobidooTaskUITests" */ = {
+		9989F2FC212B29FA000C8754 /* Build configuration list for PBXNativeTarget "IslamBookUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9989F2FD212B29FA000C8754 /* Debug */,
