@@ -12,7 +12,7 @@ import StoreKit
 class Utiles {
     
     static func rate() {
-        guard let url = URL(string: "") else { //add string url to app: itms-apps://itunes.apple.com/...
+        guard let url = URL(string: "https://itunes.apple.com/us/app/исламские-книги-читать-онлайн/id1434539304?l=ru&ls=1&mt=8") else {
             return
         }
         
@@ -24,7 +24,7 @@ class Utiles {
     }
     
     static func share(from viewController: UIViewController) {
-        let shareText = "" //add string url to app: itms-apps://itunes.apple.com/...
+        let shareText = "https://itunes.apple.com/us/app/исламские-книги-читать-онлайн/id1434539304?l=ru&ls=1&mt=8"
         let vc = UIActivityViewController(activityItems: [shareText], applicationActivities: [])
         viewController.present(vc, animated: true)
     }

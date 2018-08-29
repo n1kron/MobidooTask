@@ -38,7 +38,7 @@ class BooksListViewController: UIViewController {
             if let nextViewController = segue.destination as? ContentViewController {
                 if let id = sender as? Int {
                     if let content = BooksData.shared.booksList.first(where: {$0.id == id}) {
-                        print(id)
+                        print("current book Id: \(id)")
                         nextViewController.bookId = id
                         nextViewController.cover = content.cover
                         nextViewController.author = content.author

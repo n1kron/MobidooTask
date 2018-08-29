@@ -73,6 +73,7 @@ extension ContentViewController: UICollectionViewDelegate, UICollectionViewDataS
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentTableViewCell", for: indexPath) as! ContentCollectionViewCell
             if splittedStrings != [] {
+                cell.contentLabel.textAlignment = .justified
                 cell.contentLabel.text = splittedStrings[indexPath.row - 1]
             }
             return cell
