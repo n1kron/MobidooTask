@@ -30,6 +30,8 @@
 		9989F31C212C7760000C8754 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989F31B212C7760000C8754 /* Storage.swift */; };
 		99953BA1212F52AC00CA5944 /* ContentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99953BA0212F52AC00CA5944 /* ContentData.swift */; };
 		99B66129212F87E000E727CE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B66128212F87E000E727CE /* Extensions.swift */; };
+		99D91F0A21370C5600C691FE /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D91F0921370C5600C691FE /* NewViewController.swift */; };
+		99D91F0C21370C7700C691FE /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D91F0B21370C7700C691FE /* PopularViewController.swift */; };
 		C0EDBBE1CD9B316C47204E6C /* Pods_MobidooTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B563140F12464717BB8E0437 /* Pods_MobidooTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		9989F31B212C7760000C8754 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		99953BA0212F52AC00CA5944 /* ContentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentData.swift; sourceTree = "<group>"; };
 		99B66128212F87E000E727CE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		99D91F0921370C5600C691FE /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		99D91F0B21370C7700C691FE /* PopularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
 		A2FFFA7900746223A19FE7B6 /* Pods-MobidooTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobidooTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobidooTask/Pods-MobidooTask.release.xcconfig"; sourceTree = "<group>"; };
 		B563140F12464717BB8E0437 /* Pods_MobidooTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobidooTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -182,7 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				9989F303212B2ACA000C8754 /* View */,
-				9989F302212B2AB9000C8754 /* ViewController */,
+				9989F302212B2AB9000C8754 /* ViewControllers */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -205,17 +209,18 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		9989F302212B2AB9000C8754 /* ViewController */ = {
+		9989F302212B2AB9000C8754 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				9989F306212B2E1C000C8754 /* BooksListViewController.swift */,
 				9989F308212B2E4B000C8754 /* FavoritesViewController.swift */,
 				9989F317212C37C4000C8754 /* ContentViewController.swift */,
+				99D91F0B21370C7700C691FE /* PopularViewController.swift */,
+				99D91F0921370C5600C691FE /* NewViewController.swift */,
 				9989F313212B43D6000C8754 /* SettingsTableViewController.swift */,
-				995346A82132F12700EC8B46 /* PrivacyPolicyViewController.swift */,
-				99258F1921354FC100CF92A2 /* OnboardingViewController.swift */,
+				99D91F0821370B0500C691FE /* Tools */,
 			);
-			path = ViewController;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		9989F303212B2ACA000C8754 /* View */ = {
@@ -246,6 +251,15 @@
 				99953BA0212F52AC00CA5944 /* ContentData.swift */,
 			);
 			path = DataProviders;
+			sourceTree = "<group>";
+		};
+		99D91F0821370B0500C691FE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				995346A82132F12700EC8B46 /* PrivacyPolicyViewController.swift */,
+				99258F1921354FC100CF92A2 /* OnboardingViewController.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		C215041A5744F1A7CD82E4AC /* Pods */ = {
@@ -433,6 +447,7 @@
 			files = (
 				9989F30E212B2FE5000C8754 /* BooksData.swift in Sources */,
 				99953BA1212F52AC00CA5944 /* ContentData.swift in Sources */,
+				99D91F0A21370C5600C691FE /* NewViewController.swift in Sources */,
 				9989F31C212C7760000C8754 /* Storage.swift in Sources */,
 				9989F2D2212B29F7000C8754 /* AppDelegate.swift in Sources */,
 				995346A92132F12700EC8B46 /* PrivacyPolicyViewController.swift in Sources */,
@@ -442,6 +457,7 @@
 				9989F30B212B2EAD000C8754 /* Cells.swift in Sources */,
 				99B66129212F87E000E727CE /* Extensions.swift in Sources */,
 				995346B1213467AE00EC8B46 /* SuggestCell+CollectionView.swift in Sources */,
+				99D91F0C21370C7700C691FE /* PopularViewController.swift in Sources */,
 				99258F1A21354FC100CF92A2 /* OnboardingViewController.swift in Sources */,
 				9989F307212B2E1C000C8754 /* BooksListViewController.swift in Sources */,
 				995346AB213336F500EC8B46 /* Consts.swift in Sources */,
@@ -623,6 +639,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5C8ZLNKV2V;
 				INFOPLIST_FILE = MobidooTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -642,6 +659,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5C8ZLNKV2V;
 				INFOPLIST_FILE = MobidooTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

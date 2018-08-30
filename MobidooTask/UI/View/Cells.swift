@@ -70,5 +70,28 @@ class ContentCollectionViewCell: UICollectionViewCell {
 
 class SliderCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var sliderImageView: UIImageView!
+}
+
+class PopularTableViewCell: UITableViewCell {
+    @IBOutlet weak var popularImageView: UIImageView!
+    @IBOutlet weak var popularLabel: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        if !Consts.isIpad {
+            popularLabel.font = UIScreen.main.bounds.size.height == 568.0 ? popularLabel.font.withSize(15) : popularLabel.font.withSize(17)
+        }
+    }
+}
+
+class NewTableViewCell: UITableViewCell {
+    @IBOutlet weak var newImageView: UIImageView!
+    @IBOutlet weak var newLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        if !Consts.isIpad {
+            newLabel.font = UIScreen.main.bounds.size.height == 568.0 ? newLabel.font.withSize(15) : newLabel.font.withSize(17)
+        }
+    }
 }

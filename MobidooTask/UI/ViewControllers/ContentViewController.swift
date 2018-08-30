@@ -25,7 +25,7 @@ class ContentViewController: UIViewController {
         ContentData.shared.getData(by: bookId)
         let shareButton = UIBarButtonItem(barButtonSystemItem:.action, target: self, action: #selector(shareButtonPressed))
         navigationItem.rightBarButtonItem = shareButton
-        
+    
         NotificationCenter.default.addObserver(forName: Notification.Name("content"), object: nil, queue: nil) { [weak self] (notification) in
             self?.splittedStrings = ContentData.shared.contentText.splitByLength(Int(UIScreen.main.bounds.size.height * 1.6), separator: " ")
             self?.contentCollectionView.reloadData()
@@ -45,7 +45,12 @@ class ContentViewController: UIViewController {
     }
     
     @objc func shareButtonPressed() {
-        Utiles.share(from: self)
+        let activityVC = UIActivityViewController(activityItems: ["String to share"], applicationActivities: nil)
+        present(activityVC, animated: true, completion: nil)
+        if let popOver = activityVC.popoverPresentationController {
+            popOver.sourceView = self.view
+             Utiles.share(from: self)
+        }
     }
 }
 

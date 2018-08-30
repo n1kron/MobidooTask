@@ -39,7 +39,13 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
         } else if indexPath.section == 1 {
             switch indexPath.row {
             case 0 : Utiles.rate()
-            case 1 : Utiles.share(from: self)
+            case 1 :
+                let activityVC = UIActivityViewController(activityItems: ["String to share"], applicationActivities: nil)
+                present(activityVC, animated: true, completion: nil)
+                if let popOver = activityVC.popoverPresentationController {
+                    popOver.sourceView = self.view
+                    Utiles.share(from: self)
+                }
             case 2 :
                 if !MFMailComposeViewController.canSendMail() {
                     print("Mail services are not available")

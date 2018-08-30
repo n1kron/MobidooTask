@@ -43,7 +43,7 @@ extension FavoritesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        performSegue(withIdentifier: "ShowContent", sender: indexPath)
+        performSegue(withIdentifier: "ShowContent", sender: favoriteBooks[indexPath.row])
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
@@ -56,12 +56,15 @@ extension FavoritesViewController: UITableViewDelegate, UITableViewDataSource {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowContent"{
-            if let nextViewController = segue.destination as? ContentViewController{
-                let content = favoriteBooks[(sender as! IndexPath).row]
-                nextViewController.bookId = content.id
-                nextViewController.cover = content.cover
-                nextViewController.author = content.author
-                nextViewController.bookTitle = content.title
+            if let nextViewController = segue.destination as? ContentViewController {
+                if let id = sender as? Int {
+                    if let content = BooksData.shared.booksList.first(where: {$0.id == id}) {
+                        nextViewController.bookId = id
+                        nextViewController.cover = content.cover
+                        nextViewController.author = content.author
+                        nextViewController.bookTitle = content.title
+                    }
+                }
             }
         }
     }

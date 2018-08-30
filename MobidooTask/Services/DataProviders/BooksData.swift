@@ -11,6 +11,7 @@ import Alamofire
 
 class BooksData {
     var booksList: [Book] = []
+    var newList: [Int] = []
     static let shared = BooksData()
     
     func getData() {
@@ -19,6 +20,7 @@ class BooksData {
                 self?.booksList.removeAll()
                 for book in unparsedBooks {
                     let bookList: Book = Book(dict: book)
+                    self?.newList.append(bookList.id)
                     self?.booksList.append(bookList)
                 }
                 NotificationCenter.default.post(name: Notification.Name("books"), object: nil)
