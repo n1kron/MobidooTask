@@ -24,6 +24,8 @@ class BookTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.layer.borderWidth = 3.0
+        self.layer.borderColor = UIColor(red: 211/225, green: 211/225, blue: 211/225, alpha: 1).cgColor
         starButton.setBackgroundImage(#imageLiteral(resourceName: "star"), for: .normal)
         starButton.setBackgroundImage(#imageLiteral(resourceName: "star_pushed"), for: .selected)
         starButton.tintColor = .clear
@@ -52,6 +54,8 @@ class FavoriteTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.layer.borderWidth = 3.0
+        self.layer.borderColor = UIColor(red: 211/225, green: 211/225, blue: 211/225, alpha: 1).cgColor
         if !Consts.isIpad {
             favoriteLabel.font = UIScreen.main.bounds.size.height == 568.0 ? favoriteLabel.font.withSize(15) : favoriteLabel.font.withSize(17)
         }
@@ -78,6 +82,8 @@ class PopularTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.layer.borderWidth = 3.0
+        self.layer.borderColor = UIColor(red: 211/225, green: 211/225, blue: 211/225, alpha: 1).cgColor
         if !Consts.isIpad {
             popularLabel.font = UIScreen.main.bounds.size.height == 568.0 ? popularLabel.font.withSize(15) : popularLabel.font.withSize(17)
         }
@@ -90,6 +96,8 @@ class NewTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.layer.borderWidth = 3.0
+        self.layer.borderColor = UIColor(red: 211/225, green: 211/225, blue: 211/225, alpha: 1).cgColor
         if !Consts.isIpad {
             newLabel.font = UIScreen.main.bounds.size.height == 568.0 ? newLabel.font.withSize(15) : newLabel.font.withSize(17)
         }
