@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1047432BDAD6E6A547BA57FE /* Pods_IslamBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B86819E54F9A51045471407 /* Pods_IslamBook.framework */; };
 		99258F1A21354FC100CF92A2 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99258F1921354FC100CF92A2 /* OnboardingViewController.swift */; };
 		995346A92132F12700EC8B46 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995346A82132F12700EC8B46 /* PrivacyPolicyViewController.swift */; };
 		995346AB213336F500EC8B46 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995346AA213336F500EC8B46 /* Consts.swift */; };
@@ -32,7 +33,6 @@
 		99B66129212F87E000E727CE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B66128212F87E000E727CE /* Extensions.swift */; };
 		99D91F0A21370C5600C691FE /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D91F0921370C5600C691FE /* NewViewController.swift */; };
 		99D91F0C21370C7700C691FE /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D91F0B21370C7700C691FE /* PopularViewController.swift */; };
-		C0EDBBE1CD9B316C47204E6C /* Pods_MobidooTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B563140F12464717BB8E0437 /* Pods_MobidooTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		831692D8EBC845DA86646FC9 /* Pods-MobidooTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobidooTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobidooTask/Pods-MobidooTask.debug.xcconfig"; sourceTree = "<group>"; };
+		9439A2B547808988F11144B3 /* Pods-IslamBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IslamBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IslamBook/Pods-IslamBook.debug.xcconfig"; sourceTree = "<group>"; };
 		99258F1921354FC100CF92A2 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		995346A82132F12700EC8B46 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		995346AA213336F500EC8B46 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
@@ -86,8 +87,10 @@
 		99B66128212F87E000E727CE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		99D91F0921370C5600C691FE /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		99D91F0B21370C7700C691FE /* PopularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
+		9B86819E54F9A51045471407 /* Pods_IslamBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IslamBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FFFA7900746223A19FE7B6 /* Pods-MobidooTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobidooTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobidooTask/Pods-MobidooTask.release.xcconfig"; sourceTree = "<group>"; };
 		B563140F12464717BB8E0437 /* Pods_MobidooTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobidooTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C66BF6BEB39AA24AF3E43923 /* Pods-IslamBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IslamBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-IslamBook/Pods-IslamBook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +100,7 @@
 			files = (
 				9989F312212B307B000C8754 /* Kingfisher.framework in Frameworks */,
 				9989F310212B3076000C8754 /* Alamofire.framework in Frameworks */,
-				C0EDBBE1CD9B316C47204E6C /* Pods_MobidooTask.framework in Frameworks */,
+				1047432BDAD6E6A547BA57FE /* Pods_IslamBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +128,7 @@
 				9989F311212B307B000C8754 /* Kingfisher.framework */,
 				9989F30F212B3076000C8754 /* Alamofire.framework */,
 				B563140F12464717BB8E0437 /* Pods_MobidooTask.framework */,
+				9B86819E54F9A51045471407 /* Pods_IslamBook.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -267,6 +271,8 @@
 			children = (
 				831692D8EBC845DA86646FC9 /* Pods-MobidooTask.debug.xcconfig */,
 				A2FFFA7900746223A19FE7B6 /* Pods-MobidooTask.release.xcconfig */,
+				9439A2B547808988F11144B3 /* Pods-IslamBook.debug.xcconfig */,
+				C66BF6BEB39AA24AF3E43923 /* Pods-IslamBook.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -406,7 +412,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MobidooTask/Pods-MobidooTask-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-IslamBook/Pods-IslamBook-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
@@ -417,7 +423,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobidooTask/Pods-MobidooTask-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IslamBook/Pods-IslamBook-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		87F525633587E033F1FA25A7 /* [CP] Check Pods Manifest.lock */ = {
@@ -431,7 +437,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MobidooTask-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-IslamBook-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -633,7 +639,7 @@
 		};
 		9989F2F7212B29FA000C8754 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 831692D8EBC845DA86646FC9 /* Pods-MobidooTask.debug.xcconfig */;
+			baseConfigurationReference = 9439A2B547808988F11144B3 /* Pods-IslamBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -653,7 +659,7 @@
 		};
 		9989F2F8212B29FA000C8754 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2FFFA7900746223A19FE7B6 /* Pods-MobidooTask.release.xcconfig */;
+			baseConfigurationReference = C66BF6BEB39AA24AF3E43923 /* Pods-IslamBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
