@@ -77,16 +77,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Ght-tz-uxc" firstAttribute="bottom" secondItem="Y68-vx-c6E" secondAttribute="bottom" id="8WW-cW-FBW"/>
-                            <constraint firstItem="dbi-Zk-uwN" firstAttribute="centerX" secondItem="qre-SQ-6ox" secondAttribute="centerX" id="F2n-Qr-Phu"/>
-                            <constraint firstItem="Y68-vx-c6E" firstAttribute="leading" secondItem="Ght-tz-uxc" secondAttribute="leading" id="ceS-zY-AOY"/>
+                            <constraint firstItem="pao-rz-LU0" firstAttribute="bottom" secondItem="Y68-vx-c6E" secondAttribute="bottom" id="8WW-cW-FBW"/>
+                            <constraint firstItem="dbi-Zk-uwN" firstAttribute="centerX" secondItem="pao-rz-LU0" secondAttribute="centerX" id="F2n-Qr-Phu"/>
+                            <constraint firstItem="Y68-vx-c6E" firstAttribute="leading" secondItem="pao-rz-LU0" secondAttribute="leading" id="ceS-zY-AOY"/>
                             <constraint firstItem="dbi-Zk-uwN" firstAttribute="centerY" secondItem="qre-SQ-6ox" secondAttribute="centerY" id="iik-be-G6t"/>
-                            <constraint firstItem="Ght-tz-uxc" firstAttribute="trailing" secondItem="Y68-vx-c6E" secondAttribute="trailing" id="jJx-Vn-3Xd"/>
-                            <constraint firstItem="dbi-Zk-uwN" firstAttribute="leading" secondItem="qre-SQ-6ox" secondAttribute="leading" constant="20" id="kYl-1H-bsC"/>
-                            <constraint firstItem="Y68-vx-c6E" firstAttribute="top" secondItem="Ght-tz-uxc" secondAttribute="top" id="r2k-Nt-wGQ"/>
-                            <constraint firstAttribute="trailing" secondItem="dbi-Zk-uwN" secondAttribute="trailing" constant="20" id="wZl-sS-TKI"/>
+                            <constraint firstItem="pao-rz-LU0" firstAttribute="trailing" secondItem="Y68-vx-c6E" secondAttribute="trailing" id="jJx-Vn-3Xd"/>
+                            <constraint firstItem="dbi-Zk-uwN" firstAttribute="leading" secondItem="pao-rz-LU0" secondAttribute="leading" constant="20" id="kYl-1H-bsC"/>
+                            <constraint firstItem="Y68-vx-c6E" firstAttribute="top" secondItem="pao-rz-LU0" secondAttribute="top" id="r2k-Nt-wGQ"/>
+                            <constraint firstItem="pao-rz-LU0" firstAttribute="trailing" secondItem="dbi-Zk-uwN" secondAttribute="trailing" constant="20" id="wZl-sS-TKI"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Ght-tz-uxc"/>
+                        <viewLayoutGuide key="safeArea" id="pao-rz-LU0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Избранное" image="favourite" selectedImage="favourite" id="p1L-hf-0ha"/>
                     <connections>
@@ -125,53 +125,404 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3QB-ni-k5c">
-                                                    <rect key="frame" x="8" y="8" width="347" height="586"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="363" height="200"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CuQ-oV-G81">
-                                                            <rect key="frame" x="10" y="58.5" width="327" height="469"/>
-                                                        </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h98-g2-yus">
-                                                            <rect key="frame" x="43.5" y="10" width="260" height="38.5"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Медовый месяц в Париже" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h98-g2-yus">
+                                                            <rect key="frame" x="157" y="10" width="201" height="39.5"/>
+                                                            <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <attributedString key="attributedText">
+                                                                    <fragment content="Title">
+                                                                        <attributes>
+                                                                            <font key="NSFont" size="20" name="ArialMT"/>
+                                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        </attributes>
+                                                                    </fragment>
+                                                                </attributedString>
+                                                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="32"/>
+                                                            </variation>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="vUz-K0-UFq">
-                                                            <rect key="frame" x="43.5" y="537.5" width="260" height="38.5"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CuQ-oV-G81">
+                                                            <rect key="frame" x="5" y="5" width="147" height="190"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="CuQ-oV-G81" secondAttribute="height" multiplier="1:1.3" id="mSg-ju-ipY"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Автор" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56V-VY-5T6">
+                                                            <rect key="frame" x="157" y="54.5" width="201" height="15"/>
+                                                            <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="12"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srk-CT-Gba">
+                                                            <rect key="frame" x="157" y="150" width="201" height="40"/>
+                                                            <color key="backgroundColor" red="0.26828385469999999" green="0.7462127221" blue="0.37803723960000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="40" id="6ma-bw-Fj5">
+                                                                    <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                                                </constraint>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="17"/>
+                                                            <state key="normal" title="Читать">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="34"/>
+                                                            </variation>
+                                                            <connections>
+                                                                <action selector="tapButton:" destination="epQ-aM-duW" eventType="touchUpInside" id="nPA-iR-HNI"/>
+                                                            </connections>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUz-K0-UFq">
+                                                            <rect key="frame" x="157" y="70.5" width="201" height="17.5"/>
+                                                            <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="28"/>
+                                                            </variation>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" red="0.77857021861005504" green="0.8938915030006056" blue="0.95611972857247751" alpha="0.66486515410958902" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
-                                                        <constraint firstItem="vUz-K0-UFq" firstAttribute="width" secondItem="3QB-ni-k5c" secondAttribute="width" multiplier="0.75" id="5Fl-5U-JIu"/>
-                                                        <constraint firstItem="CuQ-oV-G81" firstAttribute="height" secondItem="3QB-ni-k5c" secondAttribute="height" multiplier="0.8" id="JT5-CL-dlh"/>
-                                                        <constraint firstItem="vUz-K0-UFq" firstAttribute="centerX" secondItem="3QB-ni-k5c" secondAttribute="centerX" id="MUM-TN-utp"/>
-                                                        <constraint firstItem="h98-g2-yus" firstAttribute="top" secondItem="3QB-ni-k5c" secondAttribute="top" constant="10" id="Nk7-m1-t3i"/>
-                                                        <constraint firstItem="h98-g2-yus" firstAttribute="centerX" secondItem="3QB-ni-k5c" secondAttribute="centerX" id="PZ6-3S-RZw"/>
-                                                        <constraint firstItem="CuQ-oV-G81" firstAttribute="top" secondItem="h98-g2-yus" secondAttribute="bottom" constant="10" id="bEQ-qg-5U0"/>
-                                                        <constraint firstItem="CuQ-oV-G81" firstAttribute="leading" secondItem="3QB-ni-k5c" secondAttribute="leading" constant="10" id="eFo-Ax-J9A"/>
-                                                        <constraint firstItem="CuQ-oV-G81" firstAttribute="centerY" secondItem="3QB-ni-k5c" secondAttribute="centerY" id="gQ0-2U-Fgq"/>
-                                                        <constraint firstItem="vUz-K0-UFq" firstAttribute="top" secondItem="CuQ-oV-G81" secondAttribute="bottom" constant="10" id="gSi-lU-rpb"/>
-                                                        <constraint firstItem="CuQ-oV-G81" firstAttribute="centerX" secondItem="3QB-ni-k5c" secondAttribute="centerX" id="lNO-3y-if5"/>
-                                                        <constraint firstAttribute="trailing" secondItem="CuQ-oV-G81" secondAttribute="trailing" constant="10" id="q37-CA-XyW"/>
-                                                        <constraint firstAttribute="bottom" secondItem="vUz-K0-UFq" secondAttribute="bottom" constant="10" id="tmA-dc-X25"/>
-                                                        <constraint firstItem="h98-g2-yus" firstAttribute="width" secondItem="3QB-ni-k5c" secondAttribute="width" multiplier="0.75" id="zSv-xT-pIo"/>
+                                                        <constraint firstItem="56V-VY-5T6" firstAttribute="top" secondItem="h98-g2-yus" secondAttribute="bottom" constant="5" id="0kB-HX-Yvg">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="height" constant="200" id="1H7-hY-JhQ">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                                        </constraint>
+                                                        <constraint firstItem="56V-VY-5T6" firstAttribute="leading" secondItem="CuQ-oV-G81" secondAttribute="trailing" constant="5" id="3HP-Gs-Q9W">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="h98-g2-yus" firstAttribute="leading" secondItem="CuQ-oV-G81" secondAttribute="trailing" constant="5" id="BTa-di-QPS">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="CuQ-oV-G81" firstAttribute="top" secondItem="3QB-ni-k5c" secondAttribute="top" constant="5" id="GCr-aP-bIi">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="Srk-CT-Gba" firstAttribute="leading" secondItem="CuQ-oV-G81" secondAttribute="trailing" constant="5" id="L6A-p2-4e1">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="Srk-CT-Gba" secondAttribute="trailing" constant="5" id="Lxu-SL-ZrY">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="vUz-K0-UFq" firstAttribute="top" secondItem="56V-VY-5T6" secondAttribute="bottom" constant="1" id="Vt6-KN-zg4">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="2"/>
+                                                        </constraint>
+                                                        <constraint firstItem="h98-g2-yus" firstAttribute="top" secondItem="3QB-ni-k5c" secondAttribute="top" constant="10" id="XM8-Cm-tRY"/>
+                                                        <constraint firstAttribute="trailing" secondItem="h98-g2-yus" secondAttribute="trailing" constant="5" id="XVJ-Uy-bfK"/>
+                                                        <constraint firstItem="vUz-K0-UFq" firstAttribute="leading" secondItem="CuQ-oV-G81" secondAttribute="trailing" constant="5" id="bqs-4f-aN1">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="CuQ-oV-G81" firstAttribute="leading" secondItem="3QB-ni-k5c" secondAttribute="leading" constant="5" id="d45-fD-nm8">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="56V-VY-5T6" secondAttribute="trailing" constant="5" id="drV-iK-lEJ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Srk-CT-Gba" secondAttribute="bottom" constant="10" id="gdJ-mO-Zfp">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="vUz-K0-UFq" secondAttribute="trailing" constant="5" id="wOE-yq-v81"/>
+                                                        <constraint firstAttribute="bottom" secondItem="CuQ-oV-G81" secondAttribute="bottom" constant="5" id="wgT-fl-4qe">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
                                                     </constraints>
                                                 </view>
+                                                <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5D-6o-vzS">
+                                                    <rect key="frame" x="0.0" y="200" width="363" height="402"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для получения полного доступа к приложению необходимо активировать подписку." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVF-pg-76F">
+                                                            <rect key="frame" x="10" y="10" width="343" height="28.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bic-2a-1oe">
+                                                            <rect key="frame" x="20" y="48.5" width="17" height="14.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="17" id="MaL-8C-ntU">
+                                                                    <variation key="heightClass=regular-widthClass=regular" constant="34"/>
+                                                                </constraint>
+                                                            </constraints>
+                                                            <string key="text" base64-UTF8="YES">
+B+KWqg
+</string>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▪" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVv-d9-wKz">
+                                                            <rect key="frame" x="20" y="68" width="17" height="14.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="17" id="2VX-2G-ao1">
+                                                                    <variation key="heightClass=regular-widthClass=regular" constant="34"/>
+                                                                </constraint>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подписка на 3 дня предоставляются бесплатно." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTF-RH-mDB">
+                                                            <rect key="frame" x="42" y="48.5" width="311" height="14"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пользователи могут управлять подписками, а также отключать автоматическое продление в настройках своего аккаунта iTunes." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIO-Ko-Ihe">
+                                                            <rect key="frame" x="42" y="67.5" width="311" height="42.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▪" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kD4-aL-I8A">
+                                                            <rect key="frame" x="20" y="115" width="17" height="14.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="17" id="SrA-1G-4Hd">
+                                                                    <variation key="heightClass=regular-widthClass=regular" constant="34"/>
+                                                                </constraint>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оплата производится со счёта, привязанного к вашему аккаунту iTunes после подтверждения покупки." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yI0-qe-NlN">
+                                                            <rect key="frame" x="42" y="115" width="311" height="28.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▪" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vp-wK-gn5">
+                                                            <rect key="frame" x="20" y="148.5" width="17" height="14.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="17" id="tsm-y6-N52">
+                                                                    <variation key="heightClass=regular-widthClass=regular" constant="34"/>
+                                                                </constraint>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYr-K0-cu9">
+                                                            <rect key="frame" x="42" y="148.5" width="311" height="56.5"/>
+                                                            <string key="text">Продление подписки происходит в конце расчетного периода за 24 часа до окончания срока действия, в случае если автоматическое продление не было отключено заранее.</string>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▪" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqc-je-aeZ">
+                                                            <rect key="frame" x="20" y="210" width="17" height="14.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="17" id="g2m-gl-VAZ">
+                                                                    <variation key="heightClass=regular-widthClass=regular" constant="34"/>
+                                                                </constraint>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оплата за продление списывается за 24 часа до окончания текущего периода." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFI-Vw-rep">
+                                                            <rect key="frame" x="42" y="210" width="311" height="28.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sX-F1-1Vk">
+                                                            <rect key="frame" x="10" y="248.5" width="343" height="56.5"/>
+                                                            <string key="text">Текущая активная подписка не может быть отменена. Любая неиспользованная часть бесплатного ознакомительного периода, если имеется, будет аннулирована при оформлении платной подписки на это издание.</string>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы можете найти наши условия использования и политику конфиденциальности по ссылкам:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpH-3y-vLH">
+                                                            <rect key="frame" x="10" y="315" width="343" height="28.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Политика конфиденциальности" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7u6-i6-GJe">
+                                                            <rect key="frame" x="10" y="358.5" width="343" height="14.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <color key="textColor" red="0.060596126479999998" green="0.097924595599999997" blue="0.58353529520000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="yI0-qe-NlN" firstAttribute="top" secondItem="FIO-Ko-Ihe" secondAttribute="bottom" constant="5" id="0lg-o8-mNn">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="FIO-Ko-Ihe" firstAttribute="top" secondItem="RTF-RH-mDB" secondAttribute="bottom" constant="5" id="1as-PW-LPU">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="RTF-RH-mDB" firstAttribute="leading" secondItem="Bic-2a-1oe" secondAttribute="trailing" constant="5" id="63s-cm-OcM">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="vqc-je-aeZ" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="20" id="7Ud-OL-XjT">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                                        </constraint>
+                                                        <constraint firstItem="LVF-pg-76F" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="10" id="7sa-LX-fmB">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="7vp-wK-gn5" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="20" id="840-9f-4Eg">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                                        </constraint>
+                                                        <constraint firstItem="Bic-2a-1oe" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="20" id="8jW-Uf-75T">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                                        </constraint>
+                                                        <constraint firstItem="BYr-K0-cu9" firstAttribute="leading" secondItem="7vp-wK-gn5" secondAttribute="trailing" constant="5" id="9ZX-4l-edV">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="6sX-F1-1Vk" secondAttribute="trailing" constant="10" id="AUc-nY-OVx">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="RTF-RH-mDB" firstAttribute="top" secondItem="LVF-pg-76F" secondAttribute="bottom" constant="10" id="Bm5-KI-AEm">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="vqc-je-aeZ" firstAttribute="top" secondItem="BYr-K0-cu9" secondAttribute="bottom" constant="5" id="Ccd-ik-sNs">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="bottom" secondItem="7u6-i6-GJe" secondAttribute="bottom" constant="10" id="EPq-WN-RA3"/>
+                                                        <constraint firstItem="7u6-i6-GJe" firstAttribute="top" secondItem="xpH-3y-vLH" secondAttribute="bottom" constant="15" id="HKM-Nr-UmR"/>
+                                                        <constraint firstItem="yVv-d9-wKz" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="20" id="Hrp-yP-FyV">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                                        </constraint>
+                                                        <constraint firstItem="xpH-3y-vLH" firstAttribute="top" secondItem="6sX-F1-1Vk" secondAttribute="bottom" constant="10" id="ITJ-33-ktG">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="HFI-Vw-rep" secondAttribute="trailing" constant="10" id="LKK-4u-cHO">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="kD4-aL-I8A" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="20" id="MBo-Df-NGK">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                                        </constraint>
+                                                        <constraint firstItem="HFI-Vw-rep" firstAttribute="top" secondItem="BYr-K0-cu9" secondAttribute="bottom" constant="5" id="YA5-2S-El4">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="LVF-pg-76F" firstAttribute="centerX" secondItem="U5D-6o-vzS" secondAttribute="centerX" id="abl-By-aRN"/>
+                                                        <constraint firstItem="kD4-aL-I8A" firstAttribute="top" secondItem="FIO-Ko-Ihe" secondAttribute="bottom" constant="5" id="bG9-GS-L2t">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="BYr-K0-cu9" secondAttribute="trailing" constant="10" id="cOx-iO-ogJ">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="FIO-Ko-Ihe" secondAttribute="trailing" constant="10" id="cW2-AH-tLL">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="xpH-3y-vLH" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="10" id="fWm-gW-xqs">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="7vp-wK-gn5" firstAttribute="top" secondItem="yI0-qe-NlN" secondAttribute="bottom" constant="5" id="gU0-ZS-Exe">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="yVv-d9-wKz" firstAttribute="top" secondItem="RTF-RH-mDB" secondAttribute="bottom" constant="5" id="gVo-fY-4zu">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="7u6-i6-GJe" secondAttribute="trailing" constant="10" id="glV-bu-X8B">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="BYr-K0-cu9" firstAttribute="top" secondItem="yI0-qe-NlN" secondAttribute="bottom" constant="5" id="hAG-Zu-8od">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="7u6-i6-GJe" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="10" id="hrN-5z-hVM">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="FIO-Ko-Ihe" firstAttribute="leading" secondItem="yVv-d9-wKz" secondAttribute="trailing" constant="5" id="iWi-OY-96a">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="HFI-Vw-rep" firstAttribute="leading" secondItem="vqc-je-aeZ" secondAttribute="trailing" constant="5" id="j2C-Q7-aCC">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="6sX-F1-1Vk" firstAttribute="top" secondItem="HFI-Vw-rep" secondAttribute="bottom" constant="10" id="jZm-JR-7Nm">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="yI0-qe-NlN" secondAttribute="trailing" constant="10" id="n9c-X6-qC0">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="LVF-pg-76F" secondAttribute="trailing" constant="10" id="njx-8Z-MFD">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="RTF-RH-mDB" secondAttribute="trailing" constant="10" id="t2B-B8-3RR">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="6sX-F1-1Vk" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="10" id="u5K-H9-HP4">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="xpH-3y-vLH" secondAttribute="trailing" constant="10" id="uQH-kg-uok">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="Bic-2a-1oe" firstAttribute="top" secondItem="LVF-pg-76F" secondAttribute="bottom" constant="10" id="vju-vn-43a">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="yI0-qe-NlN" firstAttribute="leading" secondItem="kD4-aL-I8A" secondAttribute="trailing" constant="5" id="wrx-RQ-O5h">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="LVF-pg-76F" firstAttribute="top" secondItem="U5D-6o-vzS" secondAttribute="top" constant="10" id="xtV-78-Y2g">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                    </constraints>
+                                                </scrollView>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="3QB-ni-k5c" firstAttribute="top" secondItem="epQ-aM-duW" secondAttribute="topMargin" id="4Wi-me-2dJ"/>
-                                            <constraint firstItem="3QB-ni-k5c" firstAttribute="leading" secondItem="epQ-aM-duW" secondAttribute="leadingMargin" id="KaZ-Eh-vNE"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="3QB-ni-k5c" secondAttribute="bottom" id="v4P-TX-oVs"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="3QB-ni-k5c" secondAttribute="trailing" id="ydS-pB-UzB"/>
+                                            <constraint firstItem="3QB-ni-k5c" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" id="7pd-VD-5sw"/>
+                                            <constraint firstAttribute="trailing" secondItem="3QB-ni-k5c" secondAttribute="trailing" id="Q5W-45-qvG"/>
+                                            <constraint firstAttribute="bottom" secondItem="U5D-6o-vzS" secondAttribute="bottom" id="Rmc-tz-bAS"/>
+                                            <constraint firstItem="U5D-6o-vzS" firstAttribute="top" secondItem="3QB-ni-k5c" secondAttribute="bottom" id="aVM-Z0-SEC"/>
+                                            <constraint firstAttribute="trailing" secondItem="U5D-6o-vzS" secondAttribute="trailing" id="eVH-O4-60f"/>
+                                            <constraint firstItem="U5D-6o-vzS" firstAttribute="leading" secondItem="epQ-aM-duW" secondAttribute="leading" id="nZW-4H-mMF"/>
+                                            <constraint firstItem="3QB-ni-k5c" firstAttribute="top" secondItem="epQ-aM-duW" secondAttribute="top" id="swB-Ls-BZX"/>
                                         </constraints>
                                         <size key="customSize" width="363" height="602"/>
                                         <connections>
                                             <outlet property="authorLabel" destination="vUz-K0-UFq" id="bT3-mY-glU"/>
                                             <outlet property="coverImageView" destination="CuQ-oV-G81" id="Uwt-lp-wVq"/>
+                                            <outlet property="privacyPolicyLabel" destination="7u6-i6-GJe" id="i88-Ff-OiF"/>
+                                            <outlet property="reedButton" destination="Srk-CT-Gba" id="oXu-ln-SqN"/>
                                             <outlet property="titleLabel" destination="h98-g2-yus" id="zoU-16-OD4"/>
                                         </connections>
                                     </collectionViewCell>
@@ -187,7 +538,7 @@
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="U7A-FW-TgC">
                                                             <rect key="frame" x="5" y="5" width="347" height="578"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                                            <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="30"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -222,12 +573,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="oL2-cN-Q27" firstAttribute="leading" secondItem="BWt-c6-GMf" secondAttribute="leading" id="29D-Cn-24E"/>
-                            <constraint firstAttribute="trailing" secondItem="oL2-cN-Q27" secondAttribute="trailing" id="ItC-y6-Hdu"/>
+                            <constraint firstItem="oL2-cN-Q27" firstAttribute="leading" secondItem="PHx-Oj-o0z" secondAttribute="leading" id="29D-Cn-24E"/>
+                            <constraint firstItem="PHx-Oj-o0z" firstAttribute="trailing" secondItem="oL2-cN-Q27" secondAttribute="trailing" id="ItC-y6-Hdu"/>
                             <constraint firstAttribute="bottom" secondItem="oL2-cN-Q27" secondAttribute="bottom" id="pgQ-az-vsF"/>
-                            <constraint firstItem="oL2-cN-Q27" firstAttribute="top" secondItem="0PC-lW-w7v" secondAttribute="top" id="qF1-Gg-QXy"/>
+                            <constraint firstItem="oL2-cN-Q27" firstAttribute="top" secondItem="PHx-Oj-o0z" secondAttribute="top" id="qF1-Gg-QXy"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="0PC-lW-w7v"/>
+                        <viewLayoutGuide key="safeArea" id="PHx-Oj-o0z"/>
                     </view>
                     <size key="freeformSize" width="750" height="667"/>
                     <connections>
@@ -236,7 +587,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ymL-CV-4hy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3456" y="133"/>
+            <point key="canvasLocation" x="3456" y="132.68365817091455"/>
         </scene>
         <!--Новые-->
         <scene sceneID="X2U-gz-PDq">
@@ -296,12 +647,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="RbM-fO-ku7" firstAttribute="leading" secondItem="oFn-Fi-Pz8" secondAttribute="leading" id="d69-hu-BBH"/>
-                            <constraint firstItem="oFn-Fi-Pz8" firstAttribute="bottom" secondItem="RbM-fO-ku7" secondAttribute="bottom" id="h1Q-9B-1MM"/>
-                            <constraint firstItem="RbM-fO-ku7" firstAttribute="trailing" secondItem="oFn-Fi-Pz8" secondAttribute="trailing" id="xuU-6D-GBE"/>
-                            <constraint firstItem="RbM-fO-ku7" firstAttribute="top" secondItem="oFn-Fi-Pz8" secondAttribute="top" id="yIS-Kb-dlN"/>
+                            <constraint firstItem="RbM-fO-ku7" firstAttribute="leading" secondItem="vP2-zt-qUW" secondAttribute="leading" id="d69-hu-BBH"/>
+                            <constraint firstItem="vP2-zt-qUW" firstAttribute="bottom" secondItem="RbM-fO-ku7" secondAttribute="bottom" id="h1Q-9B-1MM"/>
+                            <constraint firstItem="RbM-fO-ku7" firstAttribute="trailing" secondItem="vP2-zt-qUW" secondAttribute="trailing" id="xuU-6D-GBE"/>
+                            <constraint firstItem="RbM-fO-ku7" firstAttribute="top" secondItem="vP2-zt-qUW" secondAttribute="top" id="yIS-Kb-dlN"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="oFn-Fi-Pz8"/>
+                        <viewLayoutGuide key="safeArea" id="vP2-zt-qUW"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Новые" image="new" id="Gom-Za-xnA"/>
                     <connections>
@@ -483,12 +834,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="sCv-NQ-kII" firstAttribute="top" secondItem="Wom-39-8k0" secondAttribute="top" id="9fC-bL-dvt"/>
-                            <constraint firstItem="Wom-39-8k0" firstAttribute="bottom" secondItem="sCv-NQ-kII" secondAttribute="bottom" id="9g1-dc-kCV"/>
-                            <constraint firstItem="sCv-NQ-kII" firstAttribute="trailing" secondItem="Wom-39-8k0" secondAttribute="trailing" id="BL4-A0-i2v"/>
-                            <constraint firstItem="sCv-NQ-kII" firstAttribute="leading" secondItem="Wom-39-8k0" secondAttribute="leading" id="a4o-X5-vht"/>
+                            <constraint firstItem="sCv-NQ-kII" firstAttribute="top" secondItem="Umn-B7-PCS" secondAttribute="top" id="9fC-bL-dvt"/>
+                            <constraint firstItem="Umn-B7-PCS" firstAttribute="bottom" secondItem="sCv-NQ-kII" secondAttribute="bottom" id="9g1-dc-kCV"/>
+                            <constraint firstItem="sCv-NQ-kII" firstAttribute="trailing" secondItem="Umn-B7-PCS" secondAttribute="trailing" id="BL4-A0-i2v"/>
+                            <constraint firstItem="sCv-NQ-kII" firstAttribute="leading" secondItem="Umn-B7-PCS" secondAttribute="leading" id="a4o-X5-vht"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Wom-39-8k0"/>
+                        <viewLayoutGuide key="safeArea" id="Umn-B7-PCS"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Главное" image="main" selectedImage="main" id="o3C-Qt-64F"/>
                     <connections>
@@ -544,13 +895,13 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="aYj-02-OVc" firstAttribute="bottom" secondItem="T17-Uo-Vns" secondAttribute="bottom" id="2KJ-3u-rdf"/>
-                            <constraint firstItem="aYj-02-OVc" firstAttribute="trailing" secondItem="T17-Uo-Vns" secondAttribute="trailing" id="KE9-6h-45Y"/>
-                            <constraint firstItem="T17-Uo-Vns" firstAttribute="centerX" secondItem="fSr-bf-dcU" secondAttribute="centerX" id="jt7-Ns-eUk"/>
-                            <constraint firstItem="T17-Uo-Vns" firstAttribute="leading" secondItem="aYj-02-OVc" secondAttribute="leading" id="jwI-7D-46x"/>
+                            <constraint firstItem="v2W-HP-krP" firstAttribute="bottom" secondItem="T17-Uo-Vns" secondAttribute="bottom" id="2KJ-3u-rdf"/>
+                            <constraint firstItem="v2W-HP-krP" firstAttribute="trailing" secondItem="T17-Uo-Vns" secondAttribute="trailing" id="KE9-6h-45Y"/>
+                            <constraint firstItem="T17-Uo-Vns" firstAttribute="centerX" secondItem="v2W-HP-krP" secondAttribute="centerX" id="jt7-Ns-eUk"/>
+                            <constraint firstItem="T17-Uo-Vns" firstAttribute="leading" secondItem="v2W-HP-krP" secondAttribute="leading" id="jwI-7D-46x"/>
                             <constraint firstItem="T17-Uo-Vns" firstAttribute="centerY" secondItem="fSr-bf-dcU" secondAttribute="centerY" id="rUN-YY-cX3"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="aYj-02-OVc"/>
+                        <viewLayoutGuide key="safeArea" id="v2W-HP-krP"/>
                     </view>
                     <connections>
                         <outlet property="onboardingScrollView" destination="T17-Uo-Vns" id="v36-zQ-Mly"/>
@@ -636,12 +987,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Tau-zI-95e" firstAttribute="top" secondItem="nMc-y0-Hei" secondAttribute="top" id="0dB-Hy-bXk"/>
-                            <constraint firstItem="Tau-zI-95e" firstAttribute="trailing" secondItem="nMc-y0-Hei" secondAttribute="trailing" id="HEF-x5-22H"/>
-                            <constraint firstItem="nMc-y0-Hei" firstAttribute="bottom" secondItem="Tau-zI-95e" secondAttribute="bottom" id="JS0-xI-qqq"/>
-                            <constraint firstItem="Tau-zI-95e" firstAttribute="leading" secondItem="nMc-y0-Hei" secondAttribute="leading" id="tGe-wq-L5E"/>
+                            <constraint firstItem="Tau-zI-95e" firstAttribute="top" secondItem="I2l-kS-wAK" secondAttribute="top" id="0dB-Hy-bXk"/>
+                            <constraint firstItem="Tau-zI-95e" firstAttribute="trailing" secondItem="I2l-kS-wAK" secondAttribute="trailing" id="HEF-x5-22H"/>
+                            <constraint firstItem="I2l-kS-wAK" firstAttribute="bottom" secondItem="Tau-zI-95e" secondAttribute="bottom" id="JS0-xI-qqq"/>
+                            <constraint firstItem="Tau-zI-95e" firstAttribute="leading" secondItem="I2l-kS-wAK" secondAttribute="leading" id="tGe-wq-L5E"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="nMc-y0-Hei"/>
+                        <viewLayoutGuide key="safeArea" id="I2l-kS-wAK"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Популярные" image="popular" id="ZTo-nM-Mvc"/>
                     <connections>
@@ -687,53 +1038,168 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Политика конфиденциальности
-</string>
+                                    <fragment content="This terms of use constitutes the proposal of “">
                                         <attributes>
-                                            <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="2" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <font key="NSFont" size="13" name="Courier"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Исламские">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Monaco"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Courier"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="книги">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Monaco"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">” (hereinafter referred to as the Administration) to conclude a Contract under the terms and conditions hereinafter set forth. By using this application you automatically agree to this Terms of Use.
+
+ 
+
+1. General terms of the user agreement
+
+1.1. There are the following terms and definitions herein:
+
+a) Platform — the soft hardware, which is integrated with the mobile application of the Administration;
+
+b) User — a capable physical person, who comes in on this agreement of his own motion or acts on behalf of his principal legal body.
+
+c) Service — range of benefits and the license, collected by the User while using the Platform.
+
+d) Agreement — the present Agreement containing all amendments and modifications.
+
+1.2. Your using the Service in any manner and kind within its declared functional compass establishes the Contract based on the terms of the present Agreement in compliance with p. 437 and 438 of the Civil Code of the Russian Federation.
+
+1.3. By taking any of the above-mentioned the Service using opportunities you confirm the following:
+
+a) You have read and understood the terms of the present Agreement in its entirety before using the Service.
+
+b) You comprehensively accept all terms and conditions of this Agreement without any exceptions or limitations on your part and you shall honor them or stop using the Service. In case you don’t accept the terms of the present Agreement or you are not entitled to enter into the Contract on its base, you should stop using the Service immediately.
+
+c) This Agreement (including any part of it) may be changed by the Administration without any special notice. The new version of the Agreement enters in force since it has been posted on the Administration’s website or otherwise made available for the User, unless otherwise provided by the new version of the Agreement.
+
+2. The Service usage general conditions
+
+2.1. Using the functional resources of the Service is only permitted in case the User is registered and logged in in compliance with the procedure laid down by the Administration.
+
+2.2. The technical, structural and commercial conditions of using of the Service including the functional resources are brought to the notice of the User by specific posting on the website or via user notification.
+
+2.3. The authorization data chosen by the User is necessary and sufficient for the Service access. It is not allowed for the User to file his authorization data to a third person party. The User is fully responsible for the data security.
+
+3. The Service operation license
+
+3.1. The Administration enables the registered and/or authorized User to use the functional resource of the Platform without charge upon the non-exclusive non-negotiable license within the functional compass of the Service.
+
+3.2. The Administration has right to settle the limits on the volume and contents of the informational materials posted by the User and also settle the other hardware limitation on using the Platform, which shall be announced to the User by means at the choice of the Administration.
+
+3.3. Otherwise usage of the Administration’s Platform is strictly prohibited.
+
+4. User warranties By accepting the terms and conditions of the present Agreement you confirm and guarantee the following:
+
+4.1. You have full rights and powers to conclude the Contract for using the Service and its performance;
+
+4.2. You shall only use the Service on purposes affirmatively authorized by the present Agreement and observe its provisions and applicable law/general practice requirements;
+
+4.3. You shall not perform acts, which contradict or otherwise interfere with the Service delivery and operation of the corresponding equipment or soft hardware, networks or software supplying the Service;
+
+4.4. Using the Service on certain purposes you don’t break the property and/or personal non-property rights of third persons and proscription or limitations established by the applicable law including without limitation: copyright and related rights, trademarks rights, service marks and appellations of origin of goods, design rights, persons’ images usage rights, the materials delivered from your side don’t contain the information and/or images, which violate honor, dignity or business reputation of a person, encourage violence, sex, drugs, race hatred, and you possess all necessary permits from the authorized persons with reference of using of such materials.
+
+5. The User’s materials operating license
+
+5.1. By accepting the terms and conditions of the present Agreement you agree to license the materials, which you add (post or broadcast) on the Administration’s Platform, to the Administration without charge.
+
+5.2. The specified rights and/or permissions of materials usage are granted to the Administration at the same time as you add these materials on the Administration’s Platform throughout the term of validity of the exclusive intellectual property rights or assertion of non-property rights of the above-mentioned materials to be used within the territory of the world.
+
+6. Abridgements By accepting the terms and conditions of the present Agreement you agree and understand the following:
+
+6.1. The consumer protection legislation provisions are not applicable to the relationships of the Parties on the unpaid Service delivery.
+
+6.2. The Service is delivered on an "as is" basis, wherefore there are no any warranties, that it will correspond with the User’s requirements; the services will be delivered continuously, quickly, reliably and correctly; the results, which may be obtained via using the Service will be reliable and precise; the quality of a product, service, information or user materials obtained via using the Service will correspond the User’s expectations; all errors of the hardware will be eliminated.
+
+6.3. All responsibilities for the contents of the materials and their correspondence with the applicable law requirements shall be attached to the person, who has produced these materials or added them on the Administration’s Platform.
+
+6.4. The Administration is not related to the materials added (and broadcasted) by the User and doesn’t check their content, originality or security or their components and their correspondence to the applicable law and eligibility of the User for their usage.
+
+6.5. Especially it is prohibited to use the Service for the following purposes: Posting and/or distributing the infringing materials; Posting and/or distributing the materials with sexual content and propagation of pornography and child pornography and sex works commercials; Posting and/or distributing any other illegal information including extremist materials, materials focused on impairment of rights and freedoms on grounds of race or nationality, religion, language and sex, materials soliciting to commission of violation against people or animals, materials soliciting to any other illegal actions including those ones, that explain the weapons and drugs production and usage procedure or their resources; Underlying or exclusive placement of links to other resources; Distributing the promotional materials via direct messaging to other Users without getting their permission (SPAM); Files access limitation via password or otherwise, which are located on the Administration’s resource.
+
+6.6. Regardless of this limitation the User may receive materials, containing offensive or obscene while using the Service.
+
+6.7. In case your rights/interests are violated due to the fact of the Service usage including illegal placement of materials by other user, you should notify the Administration. To perform the notification you should send the written notice containing detailed description of the contravention and materials, which are the subjects of your rights violation.
+
+6.8. In case there are any claims on property and/or non-property private rights violation and governmental proscriptions, you should pass the official identification on the Administration’s request and provide the affidavit on regulation of the occurred claims using the own resources including the personal data.
+
+6.9. The Administration reserves the right to erase any materials from the resource or temporarily limit the access to them in a one-way fashion without giving any reason.
+
+6.10. In case of numerous or gross violation of this Agreement terms and conditions and/or the governmental requirements the Administration reserves the right to lock the User’s profile (account) to the full extent, delete it or otherwise limit the Service usage.
+
+6.11. In case the Administration is held liable or charge by violation of a third party rights and/or interests by the User, he should compensate the losses of the Administration to the full extent.
+
+6.12. The Administration is not liable for one’s using the public personal data.
+
+7. Personal data use conditions
+
+7.1. Acceding to the terms and conditions of the present Agreement you give the written consent to the personal data automated processing on the purpose of conclusion of the Contract on the base of the present Agreement and their further execution.
+
+7.2. In cases assumed by the functional resources of the Service you determine degree of accessibility of your personal data by yourself .
+
+7.3. You acknowledge and agree that in case you post your personal data using the Service, other users of the internet will have access to it. You acknowledge that your personal data is considered publicly accessible in cases when they are not subject to governmental confidentiality requirements.
+
+8. Other terms and conditions
+
+8.1. The registered User determines the usage conditions and the procedure of created profile (account) by himself, which however shall not contradict with the present Agreement.
+
+8.2. Applicable law. The present Agreement, procedure of its concluding and execution and the questions which are not regulated by the present Agreement, shall be regulated by the current legislation of the Russian Federation.
+
+8.3. Arbitration. All the disputes and disagreements arising from the Contract shall be settled through the court disposal at the Administration’s location in compliance with the current formal law of the Russian Federation.
+
+8.4. Amendments. The present Agreement may be changed or dissolved by the Administration in a one-way fashion without any prior notice of the User and any compensation therefore.
+
+As amended on 01/12/2017.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Courier"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
                                         <string key="content">
-1. Термин “личная информация”, используемый в настоящем документе, определяется как любая информация, которая идентифицирует или может использоваться для идентификации, связи или поиска человека, к которому такая информация относится. Личная информация, которую мы собираем, будет являться предметом настоящей политики конфиденциальности, с вносимыми время от времени поправками.
 
-2. Мы не запрашиваем Ваш адрес электронной почты, телефон или какую нибудь информацию о Вас.
-
-3. Мы не продаем контент.
-
-4. Мы не требуем регистрации.
-
-5. Безопасность Вашей персональной информации не будет нарушена.
-
-6. Мы не просим информацию о местоположении через наше мобильное приложение.
-
-7. Мы не отправляем на электронную почту рассылку новостей.
-
-8. Мы не запрашиваем доступ к звонкам.
-
-9. Мы не запрашиваем доступ к контактам.
-
-</string>
-                                        <attributes>
-                                            <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">Контакты:
+Контакты:
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.27059" green="0.27059" blue="0.27059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="2" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
                                                 <tabStops/>
                                             </paragraphStyle>
                                         </attributes>
@@ -753,12 +1219,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="HvM-dR-bpB" firstAttribute="top" secondItem="Lpc-KA-zdS" secondAttribute="top" id="1KS-QL-2Ar"/>
-                            <constraint firstItem="Lpc-KA-zdS" firstAttribute="trailing" secondItem="HvM-dR-bpB" secondAttribute="trailing" id="3vj-4B-514"/>
-                            <constraint firstItem="Lpc-KA-zdS" firstAttribute="bottom" secondItem="HvM-dR-bpB" secondAttribute="bottom" id="kAe-im-Kzn"/>
-                            <constraint firstItem="HvM-dR-bpB" firstAttribute="leading" secondItem="Lpc-KA-zdS" secondAttribute="leading" id="keX-jo-460"/>
+                            <constraint firstItem="HvM-dR-bpB" firstAttribute="top" secondItem="RHj-Cg-ZWO" secondAttribute="top" id="1KS-QL-2Ar"/>
+                            <constraint firstItem="RHj-Cg-ZWO" firstAttribute="trailing" secondItem="HvM-dR-bpB" secondAttribute="trailing" id="3vj-4B-514"/>
+                            <constraint firstItem="RHj-Cg-ZWO" firstAttribute="bottom" secondItem="HvM-dR-bpB" secondAttribute="bottom" id="kAe-im-Kzn"/>
+                            <constraint firstItem="HvM-dR-bpB" firstAttribute="leading" secondItem="RHj-Cg-ZWO" secondAttribute="leading" id="keX-jo-460"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Lpc-KA-zdS"/>
+                        <viewLayoutGuide key="safeArea" id="RHj-Cg-ZWO"/>
                     </view>
                     <connections>
                         <outlet property="privacyPolicyTextView" destination="HvM-dR-bpB" id="ZZZ-WI-6IQ"/>
@@ -902,6 +1368,6 @@
         <image name="settings" width="26" height="26"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eD6-12-CEM"/>
+        <segue reference="2Vt-bH-f8b"/>
     </inferredMetricsTieBreakers>
 </document>

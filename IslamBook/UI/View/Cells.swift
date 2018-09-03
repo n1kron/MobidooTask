@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 
 protocol UIFavoriteViewDelegate: class {
     func favoritePressed(cell: UITableViewCell)
@@ -66,6 +67,34 @@ class FirstPageCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var coverImageView: UIImageView!
     @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var reedButton: UIButton!
+    @IBOutlet weak var termsOfUseLabel: UILabel!
+    @IBOutlet weak var privacyPolicyLabel: UILabel!
+    
+    var purchaseProducts = [SKProduct]()
+    
+    @IBAction func tapButton(_ sender: Any) {
+        SubscriptionManager.shared.buyProduct(id: SubscriptionManager.weekProductID)
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        loadProducts()
+        
+        if !Consts.isIpad {
+            reedButton.layer.cornerRadius = 5
+        } else {
+            reedButton.layer.cornerRadius = 10
+        }
+        reedButton.clipsToBounds = true
+    }
+    
+    func loadProducts() {
+        let productIds = [SubscriptionManager.weekProductID]
+        SubscriptionManager.shared.requestProducts(productIds) { products in
+            self.purchaseProducts = products
+        }
+    }
 }
 
 class ContentCollectionViewCell: UICollectionViewCell {

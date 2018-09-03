@@ -6,6 +6,7 @@ use_frameworks!
 target 'IslamBook' do
 pod 'Alamofire'
 pod 'Kingfisher'
+pod 'SwiftyJSON', '~> 4.0'
 end
 
 

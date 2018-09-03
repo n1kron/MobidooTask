@@ -35,7 +35,7 @@ class SettingsTableViewController: UITableViewController, MFMailComposeViewContr
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         if indexPath.section == 0 {
-            // IAPManager.sharedInstance.restore()
+            SubscriptionManager.shared.resfreshReceipt()
         } else if indexPath.section == 1 {
             switch indexPath.row {
             case 0 : Utiles.rate()

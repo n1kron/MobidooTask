@@ -55,8 +55,24 @@ class ContentViewController: UIViewController {
 }
 
 extension ContentViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return splittedStrings.count + 1
+        if !SubscriptionManager.shared.isSubscriptionActive {
+            NotificationCenter.default.addObserver(self, selector: #selector(handleInAppPurchase(notification:)), name: .SubscriptionStatusNotification, object: nil)
+            return 1
+        } else {
+            return splittedStrings.count
+        }
+    }
+    
+    @objc func handleInAppPurchase(notification: Notification) {
+        guard let result = notification.object as? Bool else  { return }
+        
+        if result {
+           contentCollectionView.reloadData()
+        } else {
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -68,10 +84,14 @@ extension ContentViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if indexPath.row == 0 {
+        if !SubscriptionManager.shared.isSubscriptionActive {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FirstPageTableViewCell", for: indexPath) as! FirstPageCollectionViewCell
-            cell.authorLabel.text = "Автор: \(author)"
+            cell.authorLabel.text = author
             cell.titleLabel.text = bookTitle
+            let privacyPolicyTap = UITapGestureRecognizer(target: self, action: #selector(self.privacyPolicy(sender:)))
+            cell.privacyPolicyLabel.isUserInteractionEnabled = true
+            cell.privacyPolicyLabel.addGestureRecognizer(privacyPolicyTap)
+            
             cell.coverImageView.kf.setImage(with: URL(string: cover), completionHandler: { (image, error, cacheType, imageUrl) in
             })
             return cell
@@ -79,9 +99,23 @@ extension ContentViewController: UICollectionViewDelegate, UICollectionViewDataS
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentTableViewCell", for: indexPath) as! ContentCollectionViewCell
             if splittedStrings != [] {
                 cell.contentLabel.textAlignment = .justified
-                cell.contentLabel.text = splittedStrings[indexPath.row - 1]
+                cell.contentLabel.text = splittedStrings[indexPath.row]
             }
             return cell
+        }
+    }
+    
+    @objc func privacyPolicy(sender:UITapGestureRecognizer) {
+        openUrl(urlString: "http://104.236.106.86/politics.html")
+    }
+    
+    
+    func openUrl(urlString:String!) {
+        let url = URL(string: urlString)!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
         }
     }
 }
