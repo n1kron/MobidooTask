@@ -14,6 +14,7 @@
 		995346AB213336F500EC8B46 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995346AA213336F500EC8B46 /* Consts.swift */; };
 		995346B1213467AE00EC8B46 /* SuggestCell+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995346B0213467AE00EC8B46 /* SuggestCell+CollectionView.swift */; };
 		996F5BEF213884E5008BA54F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 996F5BEE213884E5008BA54F /* Info.plist */; };
+		996F5C51213D66E0008BA54F /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5C50213D66E0008BA54F /* Loader.swift */; };
 		9989F2D2212B29F7000C8754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989F2D1212B29F7000C8754 /* AppDelegate.swift */; };
 		9989F2D7212B29F7000C8754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9989F2D5212B29F7000C8754 /* Main.storyboard */; };
 		9989F2D9212B29FA000C8754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9989F2D8212B29FA000C8754 /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		995346AE21342BE700EC8B46 /* SwiftyOnboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyOnboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		995346B0213467AE00EC8B46 /* SuggestCell+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SuggestCell+CollectionView.swift"; sourceTree = "<group>"; };
 		996F5BEE213884E5008BA54F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		996F5C50213D66E0008BA54F /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		9989F2CE212B29F7000C8754 /* IslamBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IslamBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9989F2D1212B29F7000C8754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9989F2D6212B29F7000C8754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				995346AA213336F500EC8B46 /* Consts.swift */,
 				99B6612A212F880500E727CE /* DataProviders */,
 				9989F31B212C7760000C8754 /* Storage.swift */,
+				996F5C50213D66E0008BA54F /* Loader.swift */,
 				39B7F157213B2D350055CFF9 /* SubscriptionManager.swift */,
 			);
 			path = Services;
@@ -472,6 +475,7 @@
 				99B66129212F87E000E727CE /* Extensions.swift in Sources */,
 				995346B1213467AE00EC8B46 /* SuggestCell+CollectionView.swift in Sources */,
 				99D91F0C21370C7700C691FE /* PopularViewController.swift in Sources */,
+				996F5C51213D66E0008BA54F /* Loader.swift in Sources */,
 				99258F1A21354FC100CF92A2 /* OnboardingViewController.swift in Sources */,
 				9989F307212B2E1C000C8754 /* BooksListViewController.swift in Sources */,
 				995346AB213336F500EC8B46 /* Consts.swift in Sources */,

@@ -92,6 +92,7 @@ import SwiftyJSON
     }
     
     public func buyProduct(id: String)  {
+        SKPaymentQueue.default().add(self)
         guard SubscriptionManager.canMakePayments() else {
             UIAlertController.show(message: "Purchases are turned off".localized())
             return
@@ -100,9 +101,9 @@ import SwiftyJSON
             UIAlertController.show(message: "Product not found.")
             return
         }
-        SKPaymentQueue.default().add(self)
         let payment = SKPayment(product: product)
         SKPaymentQueue.default().add(payment)
+        SwiftLoader.show(title: "Загрузка", animated: true)
     }
     
     public class func canMakePayments() -> Bool {
@@ -229,12 +230,15 @@ extension SubscriptionManager: SKPaymentTransactionObserver {
             switch (transaction.transactionState) {
             case .purchased:
                 complete(transaction: transaction)
+                SwiftLoader.hide()
                 break
             case .failed:
                 fail(transaction: transaction)
+                SwiftLoader.hide()
                 break
             case .restored:
                 complete(transaction: transaction)
+                SwiftLoader.hide()
                 break
             case .deferred:
                 break
@@ -248,7 +252,7 @@ extension SubscriptionManager: SKPaymentTransactionObserver {
         isSubscriptionActive = true
         SKPaymentQueue.default().finishTransaction(transaction)
         let productId = transaction.payment.productIdentifier
-        
+        SwiftLoader.hide()
         guard let product = products[productId] else { return }
         
         //Analytics.logPurchase(productName: product.localizedTitle, price: product.price, currency: product.priceLocale.currencyCode ?? "")
