@@ -252,7 +252,6 @@ extension SubscriptionManager: SKPaymentTransactionObserver {
         isSubscriptionActive = true
         SKPaymentQueue.default().finishTransaction(transaction)
         let productId = transaction.payment.productIdentifier
-        SwiftLoader.hide()
         guard let product = products[productId] else { return }
         
         //Analytics.logPurchase(productName: product.localizedTitle, price: product.price, currency: product.priceLocale.currencyCode ?? "")
