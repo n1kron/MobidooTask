@@ -89,8 +89,11 @@ extension ContentViewController: UICollectionViewDelegate, UICollectionViewDataS
             cell.authorLabel.text = author
             cell.titleLabel.text = bookTitle
             let privacyPolicyTap = UITapGestureRecognizer(target: self, action: #selector(self.privacyPolicy(sender:)))
+            let termOfUseTap = UITapGestureRecognizer(target: self, action: #selector(self.termOfUse(sender:)))
             cell.privacyPolicyLabel.isUserInteractionEnabled = true
             cell.privacyPolicyLabel.addGestureRecognizer(privacyPolicyTap)
+            cell.termOfUseLabel.isUserInteractionEnabled = true
+            cell.termOfUseLabel.addGestureRecognizer(termOfUseTap)
             
             cell.coverImageView.kf.setImage(with: URL(string: cover), completionHandler: { (image, error, cacheType, imageUrl) in
             })
@@ -109,6 +112,9 @@ extension ContentViewController: UICollectionViewDelegate, UICollectionViewDataS
         openUrl(urlString: "http://104.236.106.86/politics.html")
     }
     
+    @objc func termOfUse(sender:UITapGestureRecognizer) {
+        openUrl(urlString: "http://104.236.106.86/po.html")
+    }
     
     func openUrl(urlString:String!) {
         let url = URL(string: urlString)!

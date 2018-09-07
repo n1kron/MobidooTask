@@ -69,6 +69,7 @@ class FirstPageCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var reedButton: UIButton!
     @IBOutlet weak var privacyPolicyLabel: UILabel!
+    @IBOutlet weak var termOfUseLabel: UILabel!
     
     var purchaseProducts = [SKProduct]()
     

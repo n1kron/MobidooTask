@@ -124,6 +124,277 @@
                                             <rect key="frame" x="0.0" y="0.0" width="363" height="602"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5D-6o-vzS">
+                                                    <rect key="frame" x="0.0" y="199.5" width="363" height="402"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Install the app and start Premium subscription. After that — Premium subscription will cost only $0.99 per week." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVF-pg-76F">
+                                                            <rect key="frame" x="10" y="10" width="343" height="28.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bic-2a-1oe">
+                                                            <rect key="frame" x="20" y="48.5" width="17" height="14.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="17" id="MaL-8C-ntU">
+                                                                    <variation key="heightClass=regular-widthClass=regular" constant="34"/>
+                                                                </constraint>
+                                                            </constraints>
+                                                            <string key="text" base64-UTF8="YES">
+B+KWqg
+</string>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▪" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVv-d9-wKz">
+                                                            <rect key="frame" x="20" y="68" width="17" height="14.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="17" id="2VX-2G-ao1">
+                                                                    <variation key="heightClass=regular-widthClass=regular" constant="34"/>
+                                                                </constraint>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription for 3 days is free." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTF-RH-mDB">
+                                                            <rect key="frame" x="42" y="48.5" width="311" height="14"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Users can manage their subscriptions, as well as disable automatic renewals in their iTunes account settings." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIO-Ko-Ihe">
+                                                            <rect key="frame" x="42" y="67.5" width="311" height="28.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▪" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kD4-aL-I8A">
+                                                            <rect key="frame" x="20" y="101" width="17" height="14.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="17" id="SrA-1G-4Hd">
+                                                                    <variation key="heightClass=regular-widthClass=regular" constant="34"/>
+                                                                </constraint>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you choose to buy Premium subscription, payment will be charged to iTunes Account at confirmation of purchase. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yI0-qe-NlN">
+                                                            <rect key="frame" x="42" y="101" width="311" height="42.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▪" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vp-wK-gn5">
+                                                            <rect key="frame" x="20" y="148.5" width="17" height="14.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="17" id="tsm-y6-N52">
+                                                                    <variation key="heightClass=regular-widthClass=regular" constant="34"/>
+                                                                </constraint>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYr-K0-cu9">
+                                                            <rect key="frame" x="42" y="148.5" width="311" height="42.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▪" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqc-je-aeZ">
+                                                            <rect key="frame" x="20" y="196" width="17" height="14.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="17" id="g2m-gl-VAZ">
+                                                                    <variation key="heightClass=regular-widthClass=regular" constant="34"/>
+                                                                </constraint>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFI-Vw-rep">
+                                                            <rect key="frame" x="42" y="196" width="311" height="42.5"/>
+                                                            <string key="text">Account will be charged for renewal within 24-hours prior to the end of the current period, and identify the cost of the renewal. </string>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sX-F1-1Vk">
+                                                            <rect key="frame" x="10" y="248.5" width="343" height="70.5"/>
+                                                            <string key="text">Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user's Account Settings after purchase. Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription to that publication, where applicable.</string>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Privacy policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7u6-i6-GJe">
+                                                            <rect key="frame" x="10" y="334" width="343" height="14.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <color key="textColor" red="0.060596126479999998" green="0.097924595599999997" blue="0.58353529520000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms of use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9p-Rf-vcc">
+                                                            <rect key="frame" x="10" y="358.5" width="343" height="14.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                                                            <color key="textColor" red="0.060596126479999998" green="0.097924595599999997" blue="0.58353529520000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                                            </variation>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="yI0-qe-NlN" firstAttribute="top" secondItem="FIO-Ko-Ihe" secondAttribute="bottom" constant="5" id="0lg-o8-mNn">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="FIO-Ko-Ihe" firstAttribute="top" secondItem="RTF-RH-mDB" secondAttribute="bottom" constant="5" id="1as-PW-LPU">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="7u6-i6-GJe" firstAttribute="top" secondItem="6sX-F1-1Vk" secondAttribute="bottom" constant="15" id="2Dj-w2-5za"/>
+                                                        <constraint firstItem="T9p-Rf-vcc" firstAttribute="top" secondItem="7u6-i6-GJe" secondAttribute="bottom" constant="10" id="2Qz-2A-r1M"/>
+                                                        <constraint firstItem="RTF-RH-mDB" firstAttribute="leading" secondItem="Bic-2a-1oe" secondAttribute="trailing" constant="5" id="63s-cm-OcM">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="vqc-je-aeZ" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="20" id="7Ud-OL-XjT">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                                        </constraint>
+                                                        <constraint firstItem="LVF-pg-76F" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="10" id="7sa-LX-fmB">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="7vp-wK-gn5" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="20" id="840-9f-4Eg">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                                        </constraint>
+                                                        <constraint firstItem="Bic-2a-1oe" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="20" id="8jW-Uf-75T">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                                        </constraint>
+                                                        <constraint firstItem="BYr-K0-cu9" firstAttribute="leading" secondItem="7vp-wK-gn5" secondAttribute="trailing" constant="5" id="9ZX-4l-edV">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="6sX-F1-1Vk" secondAttribute="trailing" constant="10" id="AUc-nY-OVx">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="RTF-RH-mDB" firstAttribute="top" secondItem="LVF-pg-76F" secondAttribute="bottom" constant="10" id="Bm5-KI-AEm">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="vqc-je-aeZ" firstAttribute="top" secondItem="BYr-K0-cu9" secondAttribute="bottom" constant="5" id="Ccd-ik-sNs">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="yVv-d9-wKz" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="20" id="Hrp-yP-FyV">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="T9p-Rf-vcc" secondAttribute="trailing" constant="10" id="Jmh-a3-EAc"/>
+                                                        <constraint firstAttribute="trailing" secondItem="HFI-Vw-rep" secondAttribute="trailing" constant="10" id="LKK-4u-cHO">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="kD4-aL-I8A" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="20" id="MBo-Df-NGK">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                                        </constraint>
+                                                        <constraint firstItem="HFI-Vw-rep" firstAttribute="top" secondItem="BYr-K0-cu9" secondAttribute="bottom" constant="5" id="YA5-2S-El4">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="LVF-pg-76F" firstAttribute="centerX" secondItem="U5D-6o-vzS" secondAttribute="centerX" id="abl-By-aRN"/>
+                                                        <constraint firstItem="kD4-aL-I8A" firstAttribute="top" secondItem="FIO-Ko-Ihe" secondAttribute="bottom" constant="5" id="bG9-GS-L2t">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="BYr-K0-cu9" secondAttribute="trailing" constant="10" id="cOx-iO-ogJ">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="FIO-Ko-Ihe" secondAttribute="trailing" constant="10" id="cW2-AH-tLL">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="bottom" secondItem="T9p-Rf-vcc" secondAttribute="bottom" constant="15" id="fCR-ZZ-pHd"/>
+                                                        <constraint firstItem="7vp-wK-gn5" firstAttribute="top" secondItem="yI0-qe-NlN" secondAttribute="bottom" constant="5" id="gU0-ZS-Exe">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="yVv-d9-wKz" firstAttribute="top" secondItem="RTF-RH-mDB" secondAttribute="bottom" constant="5" id="gVo-fY-4zu">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="7u6-i6-GJe" secondAttribute="trailing" constant="10" id="glV-bu-X8B">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="BYr-K0-cu9" firstAttribute="top" secondItem="yI0-qe-NlN" secondAttribute="bottom" constant="5" id="hAG-Zu-8od">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="7u6-i6-GJe" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="10" id="hrN-5z-hVM">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="FIO-Ko-Ihe" firstAttribute="leading" secondItem="yVv-d9-wKz" secondAttribute="trailing" constant="5" id="iWi-OY-96a">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="HFI-Vw-rep" firstAttribute="leading" secondItem="vqc-je-aeZ" secondAttribute="trailing" constant="5" id="j2C-Q7-aCC">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="6sX-F1-1Vk" firstAttribute="top" secondItem="HFI-Vw-rep" secondAttribute="bottom" constant="10" id="jZm-JR-7Nm">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="yI0-qe-NlN" secondAttribute="trailing" constant="10" id="n9c-X6-qC0">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="LVF-pg-76F" secondAttribute="trailing" constant="10" id="njx-8Z-MFD">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstAttribute="trailing" secondItem="RTF-RH-mDB" secondAttribute="trailing" constant="10" id="t2B-B8-3RR">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="6sX-F1-1Vk" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="10" id="u5K-H9-HP4">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="Bic-2a-1oe" firstAttribute="top" secondItem="LVF-pg-76F" secondAttribute="bottom" constant="10" id="vju-vn-43a">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="yI0-qe-NlN" firstAttribute="leading" secondItem="kD4-aL-I8A" secondAttribute="trailing" constant="5" id="wrx-RQ-O5h">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                                                        </constraint>
+                                                        <constraint firstItem="LVF-pg-76F" firstAttribute="top" secondItem="U5D-6o-vzS" secondAttribute="top" constant="10" id="xtV-78-Y2g">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                        <constraint firstItem="T9p-Rf-vcc" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="10" id="yr4-Cs-BcY">
+                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                        </constraint>
+                                                    </constraints>
+                                                </scrollView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3QB-ni-k5c">
                                                     <rect key="frame" x="0.0" y="0.0" width="363" height="200"/>
                                                     <subviews>
@@ -231,281 +502,6 @@
                                                         </constraint>
                                                     </constraints>
                                                 </view>
-                                                <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5D-6o-vzS">
-                                                    <rect key="frame" x="0.0" y="200" width="363" height="402"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Для получения полного доступа к приложению необходимо активировать подписку." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVF-pg-76F">
-                                                            <rect key="frame" x="10" y="10" width="343" height="28.5"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <size key="shadowOffset" width="0.0" height="0.0"/>
-                                                            <variation key="heightClass=regular-widthClass=regular">
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
-                                                            </variation>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bic-2a-1oe">
-                                                            <rect key="frame" x="20" y="48.5" width="17" height="14.5"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="17" id="MaL-8C-ntU">
-                                                                    <variation key="heightClass=regular-widthClass=regular" constant="34"/>
-                                                                </constraint>
-                                                            </constraints>
-                                                            <string key="text" base64-UTF8="YES">
-B+KWqg
-</string>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="12"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular-widthClass=regular">
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="24"/>
-                                                            </variation>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▪" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVv-d9-wKz">
-                                                            <rect key="frame" x="20" y="68" width="17" height="14.5"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="17" id="2VX-2G-ao1">
-                                                                    <variation key="heightClass=regular-widthClass=regular" constant="34"/>
-                                                                </constraint>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular-widthClass=regular">
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
-                                                            </variation>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подписка на 3 дня предоставляются бесплатно." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTF-RH-mDB">
-                                                            <rect key="frame" x="42" y="48.5" width="311" height="14"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="12"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular-widthClass=regular">
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="24"/>
-                                                            </variation>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пользователи могут управлять подписками, а также отключать автоматическое продление в настройках своего аккаунта iTunes." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIO-Ko-Ihe">
-                                                            <rect key="frame" x="42" y="67.5" width="311" height="42.5"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular-widthClass=regular">
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
-                                                            </variation>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▪" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kD4-aL-I8A">
-                                                            <rect key="frame" x="20" y="115" width="17" height="14.5"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="17" id="SrA-1G-4Hd">
-                                                                    <variation key="heightClass=regular-widthClass=regular" constant="34"/>
-                                                                </constraint>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular-widthClass=regular">
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
-                                                            </variation>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оплата производится со счёта, привязанного к вашему аккаунту iTunes после подтверждения покупки." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yI0-qe-NlN">
-                                                            <rect key="frame" x="42" y="115" width="311" height="28.5"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular-widthClass=regular">
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
-                                                            </variation>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▪" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vp-wK-gn5">
-                                                            <rect key="frame" x="20" y="148.5" width="17" height="14.5"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="17" id="tsm-y6-N52">
-                                                                    <variation key="heightClass=regular-widthClass=regular" constant="34"/>
-                                                                </constraint>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular-widthClass=regular">
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
-                                                            </variation>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYr-K0-cu9">
-                                                            <rect key="frame" x="42" y="148.5" width="311" height="56.5"/>
-                                                            <string key="text">Продление подписки происходит в конце расчетного периода за 24 часа до окончания срока действия, в случае если автоматическое продление не было отключено заранее.</string>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular-widthClass=regular">
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
-                                                            </variation>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="▪" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqc-je-aeZ">
-                                                            <rect key="frame" x="20" y="210" width="17" height="14.5"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="17" id="g2m-gl-VAZ">
-                                                                    <variation key="heightClass=regular-widthClass=regular" constant="34"/>
-                                                                </constraint>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular-widthClass=regular">
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
-                                                            </variation>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оплата за продление списывается за 24 часа до окончания текущего периода." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFI-Vw-rep">
-                                                            <rect key="frame" x="42" y="210" width="311" height="28.5"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular-widthClass=regular">
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
-                                                            </variation>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sX-F1-1Vk">
-                                                            <rect key="frame" x="10" y="248.5" width="343" height="56.5"/>
-                                                            <string key="text">Текущая активная подписка не может быть отменена. Любая неиспользованная часть бесплатного ознакомительного периода, если имеется, будет аннулирована при оформлении платной подписки на это издание.</string>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular-widthClass=regular">
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
-                                                            </variation>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы можете найти наши условия использования и политику конфиденциальности по ссылкам:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpH-3y-vLH">
-                                                            <rect key="frame" x="10" y="315" width="343" height="28.5"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular-widthClass=regular">
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
-                                                            </variation>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Политика конфиденциальности" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7u6-i6-GJe">
-                                                            <rect key="frame" x="10" y="358.5" width="343" height="14.5"/>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
-                                                            <color key="textColor" red="0.060596126479999998" green="0.097924595599999997" blue="0.58353529520000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                            <nil key="highlightedColor"/>
-                                                            <variation key="heightClass=regular-widthClass=regular">
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
-                                                            </variation>
-                                                        </label>
-                                                    </subviews>
-                                                    <constraints>
-                                                        <constraint firstItem="yI0-qe-NlN" firstAttribute="top" secondItem="FIO-Ko-Ihe" secondAttribute="bottom" constant="5" id="0lg-o8-mNn">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
-                                                        </constraint>
-                                                        <constraint firstItem="FIO-Ko-Ihe" firstAttribute="top" secondItem="RTF-RH-mDB" secondAttribute="bottom" constant="5" id="1as-PW-LPU">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
-                                                        </constraint>
-                                                        <constraint firstItem="RTF-RH-mDB" firstAttribute="leading" secondItem="Bic-2a-1oe" secondAttribute="trailing" constant="5" id="63s-cm-OcM">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
-                                                        </constraint>
-                                                        <constraint firstItem="vqc-je-aeZ" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="20" id="7Ud-OL-XjT">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
-                                                        </constraint>
-                                                        <constraint firstItem="LVF-pg-76F" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="10" id="7sa-LX-fmB">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                        <constraint firstItem="7vp-wK-gn5" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="20" id="840-9f-4Eg">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
-                                                        </constraint>
-                                                        <constraint firstItem="Bic-2a-1oe" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="20" id="8jW-Uf-75T">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
-                                                        </constraint>
-                                                        <constraint firstItem="BYr-K0-cu9" firstAttribute="leading" secondItem="7vp-wK-gn5" secondAttribute="trailing" constant="5" id="9ZX-4l-edV">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
-                                                        </constraint>
-                                                        <constraint firstAttribute="trailing" secondItem="6sX-F1-1Vk" secondAttribute="trailing" constant="10" id="AUc-nY-OVx">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                        <constraint firstItem="RTF-RH-mDB" firstAttribute="top" secondItem="LVF-pg-76F" secondAttribute="bottom" constant="10" id="Bm5-KI-AEm">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                        <constraint firstItem="vqc-je-aeZ" firstAttribute="top" secondItem="BYr-K0-cu9" secondAttribute="bottom" constant="5" id="Ccd-ik-sNs">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
-                                                        </constraint>
-                                                        <constraint firstAttribute="bottom" secondItem="7u6-i6-GJe" secondAttribute="bottom" constant="10" id="EPq-WN-RA3"/>
-                                                        <constraint firstItem="7u6-i6-GJe" firstAttribute="top" secondItem="xpH-3y-vLH" secondAttribute="bottom" constant="15" id="HKM-Nr-UmR"/>
-                                                        <constraint firstItem="yVv-d9-wKz" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="20" id="Hrp-yP-FyV">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
-                                                        </constraint>
-                                                        <constraint firstItem="xpH-3y-vLH" firstAttribute="top" secondItem="6sX-F1-1Vk" secondAttribute="bottom" constant="10" id="ITJ-33-ktG">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                        <constraint firstAttribute="trailing" secondItem="HFI-Vw-rep" secondAttribute="trailing" constant="10" id="LKK-4u-cHO">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                        <constraint firstItem="kD4-aL-I8A" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="20" id="MBo-Df-NGK">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="40"/>
-                                                        </constraint>
-                                                        <constraint firstItem="HFI-Vw-rep" firstAttribute="top" secondItem="BYr-K0-cu9" secondAttribute="bottom" constant="5" id="YA5-2S-El4">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
-                                                        </constraint>
-                                                        <constraint firstItem="LVF-pg-76F" firstAttribute="centerX" secondItem="U5D-6o-vzS" secondAttribute="centerX" id="abl-By-aRN"/>
-                                                        <constraint firstItem="kD4-aL-I8A" firstAttribute="top" secondItem="FIO-Ko-Ihe" secondAttribute="bottom" constant="5" id="bG9-GS-L2t">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
-                                                        </constraint>
-                                                        <constraint firstAttribute="trailing" secondItem="BYr-K0-cu9" secondAttribute="trailing" constant="10" id="cOx-iO-ogJ">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                        <constraint firstAttribute="trailing" secondItem="FIO-Ko-Ihe" secondAttribute="trailing" constant="10" id="cW2-AH-tLL">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                        <constraint firstItem="xpH-3y-vLH" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="10" id="fWm-gW-xqs">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                        <constraint firstItem="7vp-wK-gn5" firstAttribute="top" secondItem="yI0-qe-NlN" secondAttribute="bottom" constant="5" id="gU0-ZS-Exe">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
-                                                        </constraint>
-                                                        <constraint firstItem="yVv-d9-wKz" firstAttribute="top" secondItem="RTF-RH-mDB" secondAttribute="bottom" constant="5" id="gVo-fY-4zu">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
-                                                        </constraint>
-                                                        <constraint firstAttribute="trailing" secondItem="7u6-i6-GJe" secondAttribute="trailing" constant="10" id="glV-bu-X8B">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                        <constraint firstItem="BYr-K0-cu9" firstAttribute="top" secondItem="yI0-qe-NlN" secondAttribute="bottom" constant="5" id="hAG-Zu-8od">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
-                                                        </constraint>
-                                                        <constraint firstItem="7u6-i6-GJe" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="10" id="hrN-5z-hVM">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                        <constraint firstItem="FIO-Ko-Ihe" firstAttribute="leading" secondItem="yVv-d9-wKz" secondAttribute="trailing" constant="5" id="iWi-OY-96a">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
-                                                        </constraint>
-                                                        <constraint firstItem="HFI-Vw-rep" firstAttribute="leading" secondItem="vqc-je-aeZ" secondAttribute="trailing" constant="5" id="j2C-Q7-aCC">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
-                                                        </constraint>
-                                                        <constraint firstItem="6sX-F1-1Vk" firstAttribute="top" secondItem="HFI-Vw-rep" secondAttribute="bottom" constant="10" id="jZm-JR-7Nm">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                        <constraint firstAttribute="trailing" secondItem="yI0-qe-NlN" secondAttribute="trailing" constant="10" id="n9c-X6-qC0">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                        <constraint firstAttribute="trailing" secondItem="LVF-pg-76F" secondAttribute="trailing" constant="10" id="njx-8Z-MFD">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                        <constraint firstAttribute="trailing" secondItem="RTF-RH-mDB" secondAttribute="trailing" constant="10" id="t2B-B8-3RR">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                        <constraint firstItem="6sX-F1-1Vk" firstAttribute="leading" secondItem="U5D-6o-vzS" secondAttribute="leading" constant="10" id="u5K-H9-HP4">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                        <constraint firstAttribute="trailing" secondItem="xpH-3y-vLH" secondAttribute="trailing" constant="10" id="uQH-kg-uok">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                        <constraint firstItem="Bic-2a-1oe" firstAttribute="top" secondItem="LVF-pg-76F" secondAttribute="bottom" constant="10" id="vju-vn-43a">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                        <constraint firstItem="yI0-qe-NlN" firstAttribute="leading" secondItem="kD4-aL-I8A" secondAttribute="trailing" constant="5" id="wrx-RQ-O5h">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="10"/>
-                                                        </constraint>
-                                                        <constraint firstItem="LVF-pg-76F" firstAttribute="top" secondItem="U5D-6o-vzS" secondAttribute="top" constant="10" id="xtV-78-Y2g">
-                                                            <variation key="heightClass=regular-widthClass=regular" constant="20"/>
-                                                        </constraint>
-                                                    </constraints>
-                                                </scrollView>
                                             </subviews>
                                         </view>
                                         <constraints>
@@ -523,6 +519,7 @@ B+KWqg
                                             <outlet property="coverImageView" destination="CuQ-oV-G81" id="Uwt-lp-wVq"/>
                                             <outlet property="privacyPolicyLabel" destination="7u6-i6-GJe" id="i88-Ff-OiF"/>
                                             <outlet property="reedButton" destination="Srk-CT-Gba" id="oXu-ln-SqN"/>
+                                            <outlet property="termOfUseLabel" destination="T9p-Rf-vcc" id="80r-3P-w9b"/>
                                             <outlet property="titleLabel" destination="h98-g2-yus" id="zoU-16-OD4"/>
                                         </connections>
                                     </collectionViewCell>
