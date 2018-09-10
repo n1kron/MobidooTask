@@ -399,7 +399,7 @@ B+KWqg
                                                     <rect key="frame" x="0.0" y="0.0" width="363" height="200"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Медовый месяц в Париже" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h98-g2-yus">
-                                                            <rect key="frame" x="157" y="10" width="201" height="39.5"/>
+                                                            <rect key="frame" x="157" y="15" width="201" height="39.5"/>
                                                             <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -422,7 +422,7 @@ B+KWqg
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Автор" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56V-VY-5T6">
-                                                            <rect key="frame" x="157" y="54.5" width="201" height="15"/>
+                                                            <rect key="frame" x="157" y="59.5" width="201" height="15"/>
                                                             <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="12"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="heightClass=regular-widthClass=regular">
@@ -449,7 +449,7 @@ B+KWqg
                                                             </connections>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUz-K0-UFq">
-                                                            <rect key="frame" x="157" y="70.5" width="201" height="17.5"/>
+                                                            <rect key="frame" x="157" y="75.5" width="201" height="17.5"/>
                                                             <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -484,7 +484,7 @@ B+KWqg
                                                         <constraint firstItem="vUz-K0-UFq" firstAttribute="top" secondItem="56V-VY-5T6" secondAttribute="bottom" constant="1" id="Vt6-KN-zg4">
                                                             <variation key="heightClass=regular-widthClass=regular" constant="2"/>
                                                         </constraint>
-                                                        <constraint firstItem="h98-g2-yus" firstAttribute="top" secondItem="3QB-ni-k5c" secondAttribute="top" constant="10" id="XM8-Cm-tRY"/>
+                                                        <constraint firstItem="h98-g2-yus" firstAttribute="top" secondItem="3QB-ni-k5c" secondAttribute="top" constant="15" id="XM8-Cm-tRY"/>
                                                         <constraint firstAttribute="trailing" secondItem="h98-g2-yus" secondAttribute="trailing" constant="5" id="XVJ-Uy-bfK"/>
                                                         <constraint firstItem="vUz-K0-UFq" firstAttribute="leading" secondItem="CuQ-oV-G81" secondAttribute="trailing" constant="5" id="bqs-4f-aN1">
                                                             <variation key="heightClass=regular-widthClass=regular" constant="10"/>
