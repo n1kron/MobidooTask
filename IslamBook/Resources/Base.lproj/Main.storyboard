@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GIq-zc-PrU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FAV-ld-FCC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -849,70 +849,10 @@ B+KWqg
             </objects>
             <point key="canvasLocation" x="1985" y="345"/>
         </scene>
-        <!--Onboarding View Controller-->
-        <scene sceneID="BDG-RE-nJS">
-            <objects>
-                <viewController storyboardIdentifier="OnboardingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lnr-w6-AUj" customClass="OnboardingViewController" customModule="IslamBook" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fSr-bf-dcU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T17-Uo-Vns">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ot-CO-IAw">
-                                        <rect key="frame" x="0.0" y="0.0" width="1125" height="667"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard0" translatesAutoresizingMaskIntoConstraints="NO" id="ur8-87-g0z">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard1" translatesAutoresizingMaskIntoConstraints="NO" id="AUy-IC-QzH">
-                                                <rect key="frame" x="375" y="0.0" width="375" height="667"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard2" translatesAutoresizingMaskIntoConstraints="NO" id="OLB-kF-GKM">
-                                                <rect key="frame" x="750" y="0.0" width="375" height="667"/>
-                                                <gestureRecognizers/>
-                                            </imageView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="AUy-IC-QzH" firstAttribute="width" secondItem="T17-Uo-Vns" secondAttribute="width" id="0E1-2g-6az"/>
-                                    <constraint firstItem="ur8-87-g0z" firstAttribute="width" secondItem="T17-Uo-Vns" secondAttribute="width" id="1vZ-sa-wII"/>
-                                    <constraint firstItem="AUy-IC-QzH" firstAttribute="height" secondItem="T17-Uo-Vns" secondAttribute="height" id="AMn-Yq-N3E"/>
-                                    <constraint firstItem="6ot-CO-IAw" firstAttribute="top" secondItem="T17-Uo-Vns" secondAttribute="top" id="Ban-AB-F7m"/>
-                                    <constraint firstItem="OLB-kF-GKM" firstAttribute="height" secondItem="T17-Uo-Vns" secondAttribute="height" id="Eqe-eJ-TVr"/>
-                                    <constraint firstItem="6ot-CO-IAw" firstAttribute="leading" secondItem="T17-Uo-Vns" secondAttribute="leading" id="Gq1-XI-aa0"/>
-                                    <constraint firstItem="OLB-kF-GKM" firstAttribute="width" secondItem="T17-Uo-Vns" secondAttribute="width" id="HaS-wO-GH2"/>
-                                    <constraint firstAttribute="bottom" secondItem="6ot-CO-IAw" secondAttribute="bottom" id="KfH-Tk-ZNY"/>
-                                    <constraint firstAttribute="trailing" secondItem="6ot-CO-IAw" secondAttribute="trailing" id="VSp-70-EzA"/>
-                                    <constraint firstItem="ur8-87-g0z" firstAttribute="height" secondItem="T17-Uo-Vns" secondAttribute="height" id="leM-hD-K6y"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="v2W-HP-krP" firstAttribute="bottom" secondItem="T17-Uo-Vns" secondAttribute="bottom" id="2KJ-3u-rdf"/>
-                            <constraint firstItem="v2W-HP-krP" firstAttribute="trailing" secondItem="T17-Uo-Vns" secondAttribute="trailing" id="KE9-6h-45Y"/>
-                            <constraint firstItem="T17-Uo-Vns" firstAttribute="centerX" secondItem="v2W-HP-krP" secondAttribute="centerX" id="jt7-Ns-eUk"/>
-                            <constraint firstItem="T17-Uo-Vns" firstAttribute="leading" secondItem="v2W-HP-krP" secondAttribute="leading" id="jwI-7D-46x"/>
-                            <constraint firstItem="T17-Uo-Vns" firstAttribute="centerY" secondItem="fSr-bf-dcU" secondAttribute="centerY" id="rUN-YY-cX3"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="v2W-HP-krP"/>
-                    </view>
-                    <connections>
-                        <outlet property="onboardingScrollView" destination="T17-Uo-Vns" id="v36-zQ-Mly"/>
-                        <segue destination="GIq-zc-PrU" kind="show" identifier="ShowApp" id="OKd-y1-tfB"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OCs-WG-Mgp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="110" y="-821"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="RfP-yd-cyy">
             <objects>
-                <navigationController id="GIq-zc-PrU" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GIq-zc-PrU" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="3jf-hj-7AT">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1353,14 +1293,70 @@ As amended on 01/12/2017.</string>
             </objects>
             <point key="canvasLocation" x="377" y="815"/>
         </scene>
+        <!--Onboarding View Controller-->
+        <scene sceneID="Pxj-dC-uxw">
+            <objects>
+                <viewController id="FAV-ld-FCC" customClass="OnboardingViewController" customModule="IslamBook" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pnk-ri-Q0J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="GKj-LG-lUV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aS-OW-6oJ">
+                                <rect key="frame" x="0.0" y="400" width="375" height="267"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="delegate" destination="FAV-ld-FCC" id="gn3-sv-Pb6"/>
+                                    <outletCollection property="gestureRecognizers" destination="0um-KX-13t" appends="YES" id="veu-dg-ent"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="0aS-OW-6oJ" secondAttribute="bottom" id="4Hj-wb-32v"/>
+                            <constraint firstAttribute="bottom" secondItem="GKj-LG-lUV" secondAttribute="bottom" id="Eyg-mM-kRY"/>
+                            <constraint firstAttribute="trailing" secondItem="0aS-OW-6oJ" secondAttribute="trailing" id="QFb-h2-wcK"/>
+                            <constraint firstItem="GKj-LG-lUV" firstAttribute="trailing" secondItem="FIc-ZM-ZML" secondAttribute="trailing" id="bzS-8F-qiu"/>
+                            <constraint firstItem="0aS-OW-6oJ" firstAttribute="height" secondItem="Pnk-ri-Q0J" secondAttribute="height" multiplier="1:2.5" id="cBr-RH-a0v"/>
+                            <constraint firstItem="GKj-LG-lUV" firstAttribute="leading" secondItem="FIc-ZM-ZML" secondAttribute="leading" id="cWy-ac-T1p"/>
+                            <constraint firstItem="GKj-LG-lUV" firstAttribute="top" secondItem="Pnk-ri-Q0J" secondAttribute="top" id="uCs-41-s1o"/>
+                            <constraint firstItem="0aS-OW-6oJ" firstAttribute="leading" secondItem="Pnk-ri-Q0J" secondAttribute="leading" id="vdf-3a-mxm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FIc-ZM-ZML"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Zzf-4l-hps" appends="YES" id="eGh-Lw-XXb"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="GKj-LG-lUV" id="Gi8-rD-e6i"/>
+                        <outlet property="contentScrollView" destination="0aS-OW-6oJ" id="KMs-PW-hoH"/>
+                        <segue destination="GIq-zc-PrU" kind="presentation" identifier="GoApp" id="GQX-It-OrZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H2q-4F-qZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Zzf-4l-hps">
+                    <connections>
+                        <action selector="handlePanWithRecognizer:" destination="FAV-ld-FCC" id="c0k-ze-y4C"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="0um-KX-13t">
+                    <connections>
+                        <action selector="handlePanWithRecognizer:" destination="FAV-ld-FCC" id="25S-2y-qMK"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-727" y="-34"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="background" width="1024" height="1366"/>
         <image name="favourite" width="26" height="26"/>
         <image name="main" width="26" height="26"/>
         <image name="new" width="26" height="26"/>
-        <image name="onboard0" width="250" height="444"/>
-        <image name="onboard1" width="250" height="444"/>
-        <image name="onboard2" width="250" height="444"/>
         <image name="popular" width="26" height="26"/>
         <image name="settings" width="26" height="26"/>
     </resources>
