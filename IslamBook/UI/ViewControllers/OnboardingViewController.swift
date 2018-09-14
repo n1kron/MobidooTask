@@ -24,7 +24,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     var originTop : CGFloat = -168.5
     var top : CGFloat = 50
     var textHeaderLabel = ["CHOOSE", "READ", "TRACK"]
-    var textLitleLabel = ["favorite books", "with a iPhone on the road or on the iPad at home", "for the compilations of our editorial staff"]
+    var textLitleLabel = ["Favorite books", "With a iPhone on the road or on the iPad at home", "For the compilations of our editorial staff"]
     var textButton = ["NEXT", "NEXT", "START"]
     
     let countContentViews = 3
@@ -35,7 +35,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         if Locale.current.languageCode! == "ru" {
             textHeaderLabel = ["ВЫБИРАЙТЕ", "ЧИТАЙТЕ", "СЛЕДИТЕ"]
-            textLitleLabel = ["книги на любой вкус", "со смартфона в дороге или на планшете дома", "за подборками нашей редакции"]
+            textLitleLabel = ["Книги на любой вкус", "Со смартфона в дороге или на планшете дома", "За подборками нашей редакции"]
             textButton = ["ДАЛЕЕ", "ДАЛЕЕ", "НАЧАТЬ"]
         }
         loadProducts()
@@ -114,8 +114,8 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         let headerLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 30 * multiplier))
         settingsLabel(label: headerLabel, text: textHeaderLabel[number], nameFont: "HelveticaNeue-Bold", size: 27 * multiplier)
         view.addSubview(headerLabel)
-        let litleLabel = UILabel(frame: CGRect(x: 0, y: headerLabel.frame.maxY, width: view.frame.width, height: 30 * multiplier))
-        settingsLabel(label: litleLabel, text: textLitleLabel[number], nameFont: "HelveticaNeue", size: 15 * multiplier)
+        let litleLabel = UILabel(frame: CGRect(x: 20, y: headerLabel.frame.maxY, width: view.frame.width - 40 , height: 30 * multiplier))
+        settingsLabel(label: litleLabel, text: textLitleLabel[number], nameFont: "HelveticaNeue-Medium", size: 17 * multiplier)
         view.addSubview(litleLabel)
         var button = UIButton()
         if multiplier == 2 {
