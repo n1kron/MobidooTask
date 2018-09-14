@@ -24,4 +24,11 @@ class Utiles {
         let vc = UIActivityViewController(activityItems: [shareText], applicationActivities: [])
         viewController.present(vc, animated: true)
     }
+    
+    func getPrefferedLocale() -> Locale {
+        guard let prefferredIdentifier = Locale.preferredLanguages.first else {
+            return Locale.current
+        }
+        return Locale(identifier: prefferredIdentifier)
+    }
 }
