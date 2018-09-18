@@ -7,21 +7,36 @@
 //
 
 import UIKit
+import AppsFlyerLib
+import FBSDKCoreKit
+import FBSDKLoginKit
+import FacebookCore
+import FacebookLogin
+import FacebookShare
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, AppsFlyerTrackerDelegate {
 
     var window: UIWindow?
 
-    let configUrl = "http://disalwow.site/api/check-clean"
+    let configUrl = "http://islam-books.site/api/check-clean"
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        AppsFlyerTracker.shared().appsFlyerDevKey = "ij9E8xjzQ8CnqQu9WWvYfM"
+        AppsFlyerTracker.shared().appleAppID = "1434539304"
+        AppsFlyerTracker.shared().delegate = self
+        //AppsFlyerTracker.shared().isDebug = true
+        
         loadConfig()
         if UserDefaults.standard.object(forKey: "OnOnboarding") as? Int == 1 {
             let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
             self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "NavigationVC")
         }
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        return FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: options)
     }
     
     func loadConfig() {
@@ -54,6 +69,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         storage.save()
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        // Track Installs, updates & sessions(app opens) (You must include this API to enable tracking)
+        AppEventsLogger.activate(application)
+        AppsFlyerTracker.shared().trackAppLaunch()
     }
 }
 

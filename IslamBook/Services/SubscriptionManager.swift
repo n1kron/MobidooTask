@@ -9,6 +9,10 @@
 import UIKit
 import StoreKit
 import SwiftyJSON
+import AppsFlyerLib
+import FacebookCore
+import FacebookLogin
+import FacebookShare
 
 @objc class SubscriptionManager: NSObject {
     
@@ -254,7 +258,14 @@ extension SubscriptionManager: SKPaymentTransactionObserver {
         let productId = transaction.payment.productIdentifier
         guard let product = products[productId] else { return }
         
-        //Analytics.logPurchase(productName: product.localizedTitle, price: product.price, currency: product.priceLocale.currencyCode ?? "")
+        AppsFlyerTracker.shared().trackEvent(AFEventPurchase,
+                                             withValues: [
+                                                AFEventParamContentId: "1",
+                                                AFEventParamContentType: product.localizedTitle,
+                                                AFEventParamRevenue: CGFloat(truncating: product.price) * 0.6,
+                                                AFEventParamCurrency: product.priceLocale.currencyCode
+            ])
+        AppEventsLogger.log(.purchased(amount: Double(CGFloat(truncating: product.price) * 0.6), currency: product.priceLocale.currencyCode))
     }
     
     

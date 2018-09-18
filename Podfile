@@ -7,6 +7,11 @@ target 'IslamBook' do
 pod 'Alamofire'
 pod 'Kingfisher'
 pod 'SwiftyJSON', '~> 4.0'
+pod 'AppsFlyerFramework'
+pod 'FBSDKLoginKit'
+pod 'FacebookCore'
+pod 'FacebookLogin'
+pod 'FacebookShare'
 end
 
 

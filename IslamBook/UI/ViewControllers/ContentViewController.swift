@@ -109,11 +109,11 @@ extension ContentViewController: UICollectionViewDelegate, UICollectionViewDataS
     }
     
     @objc func privacyPolicy(sender:UITapGestureRecognizer) {
-        openUrl(urlString: "http://104.236.106.86/politics.html")
+        openUrl(urlString: "http://islam-books.site/po.html")
     }
     
     @objc func termOfUse(sender:UITapGestureRecognizer) {
-        openUrl(urlString: "http://104.236.106.86/po.html")
+        openUrl(urlString: "http://islam-books.site/politics.html")
     }
     
     func openUrl(urlString:String!) {
