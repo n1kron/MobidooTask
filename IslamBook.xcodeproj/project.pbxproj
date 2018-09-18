@@ -13,7 +13,6 @@
 		995346A92132F12700EC8B46 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995346A82132F12700EC8B46 /* PrivacyPolicyViewController.swift */; };
 		995346AB213336F500EC8B46 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995346AA213336F500EC8B46 /* Consts.swift */; };
 		995346B1213467AE00EC8B46 /* SuggestCell+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995346B0213467AE00EC8B46 /* SuggestCell+CollectionView.swift */; };
-		996F5BEF213884E5008BA54F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 996F5BEE213884E5008BA54F /* Info.plist */; };
 		996F5C51213D66E0008BA54F /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996F5C50213D66E0008BA54F /* SwiftLoader.swift */; };
 		9989F2D2212B29F7000C8754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9989F2D1212B29F7000C8754 /* AppDelegate.swift */; };
 		9989F2D7212B29F7000C8754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9989F2D5212B29F7000C8754 /* Main.storyboard */; };
@@ -390,7 +389,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				996F5BEF213884E5008BA54F /* Info.plist in Resources */,
 				9989F2DC212B29FA000C8754 /* LaunchScreen.storyboard in Resources */,
 				9989F2D9212B29FA000C8754 /* Assets.xcassets in Resources */,
 				9989F2D7212B29F7000C8754 /* Main.storyboard in Resources */,
@@ -669,7 +667,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 58UK7RM3J5;
+				DEVELOPMENT_TEAM = 5C8ZLNKV2V;
 				INFOPLIST_FILE = IslamBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -689,7 +687,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 58UK7RM3J5;
+				DEVELOPMENT_TEAM = 5C8ZLNKV2V;
 				INFOPLIST_FILE = IslamBook/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
